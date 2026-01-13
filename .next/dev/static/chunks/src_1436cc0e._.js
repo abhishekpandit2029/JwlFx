@@ -2595,71 +2595,17 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 "[project]/src/components/common/SelectCallingCode.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
-// "use client";
-// import { callingCodeData } from "@/data/callingCodeData";
-// import { useState, useMemo } from "react";
-// import { Select } from "antd";
-// const { Option } = Select;
-// export default function SelectCallingCode({
-//   onChange,
-// }: {
-//   onChange?: (value: string) => void;
-// }) {
-//   const [search, setSearch] = useState("");
-//   const [selected, setSelected] = useState("");
-//   const callingCodes = useMemo(() => {
-//     return callingCodeData.map((code) => ({
-//       label: code,
-//       value: code,
-//     }));
-//   }, []);
-//   const filteredCodes = useMemo(() => {
-//     return callingCodes.filter((item) =>
-//       item.label.toLowerCase().includes(search.toLowerCase())
-//     );
-//   }, [search, callingCodes]);
-//   const handleChange = (value: string) => {
-//     setSelected(value);
-//     if (onChange) onChange(value);
-//   };
-//   return (
-//     <div className="w-20">
-//       <Select
-//         showSearch
-//         placeholder="+44"
-//         value={selected || undefined}
-//         onChange={handleChange}
-//         onSearch={setSearch}
-//         filterOption={false}
-//         className="w-full"
-//         dropdownMatchSelectWidth={200}
-//         style={{
-//           height: 48,
-//           borderRadius: 8,
-//         }}
-//         dropdownStyle={{
-//           borderRadius: 8,
-//         }}
-//       >
-//         {filteredCodes.map((item, idx) => (
-//           <Option key={idx} value={item.value}>
-//             {item.label}
-//           </Option>
-//         ))}
-//       </Select>
-//     </div>
-//   );
-// }
-// SelectCallingCode.tsx
 __turbopack_context__.s([
     "default",
     ()=>SelectCallingCode
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_babel$2d$plugin$2d$react$2d$compiler$40$1$2e$0$2e$0_react$2d$dom$40$19$2e$2$2e$1_react$40$19$2e$2$2e$1_$5f$react$40$19$2e$2$2e$1$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/next@16.0.10_@babel+core@7.28.5_babel-plugin-react-compiler@1.0.0_react-dom@19.2.1_react@19.2.1__react@19.2.1/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$styled$2d$jsx$40$5$2e$1$2e$6_$40$babel$2b$core$40$7$2e$28$2e$5_react$40$19$2e$2$2e$1$2f$node_modules$2f$styled$2d$jsx$2f$style$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/styled-jsx@5.1.6_@babel+core@7.28.5_react@19.2.1/node_modules/styled-jsx/style.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_babel$2d$plugin$2d$react$2d$compiler$40$1$2e$0$2e$0_react$2d$dom$40$19$2e$2$2e$1_react$40$19$2e$2$2e$1_$5f$react$40$19$2e$2$2e$1$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/next@16.0.10_@babel+core@7.28.5_babel-plugin-react-compiler@1.0.0_react-dom@19.2.1_react@19.2.1__react@19.2.1/node_modules/next/dist/compiled/react/compiler-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$data$2f$callingCodeData$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/data/callingCodeData.ts [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_babel$2d$plugin$2d$react$2d$compiler$40$1$2e$0$2e$0_react$2d$dom$40$19$2e$2$2e$1_react$40$19$2e$2$2e$1_$5f$react$40$19$2e$2$2e$1$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/next@16.0.10_@babel+core@7.28.5_babel-plugin-react-compiler@1.0.0_react-dom@19.2.1_react@19.2.1__react@19.2.1/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$antd$40$6$2e$1$2e$1_react$2d$dom$40$19$2e$2$2e$1_react$40$19$2e$2$2e$1_$5f$react$40$19$2e$2$2e$1$2f$node_modules$2f$antd$2f$es$2f$select$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Select$3e$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/antd@6.1.1_react-dom@19.2.1_react@19.2.1__react@19.2.1/node_modules/antd/es/select/index.js [app-client] (ecmascript) <export default as Select>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$antd$40$6$2e$1$2e$1_react$2d$dom$40$19$2e$2$2e$1_react$40$19$2e$2$2e$1_$5f$react$40$19$2e$2$2e$1$2f$node_modules$2f$antd$2f$es$2f$config$2d$provider$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__ConfigProvider$3e$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/antd@6.1.1_react-dom@19.2.1_react@19.2.1__react@19.2.1/node_modules/antd/es/config-provider/index.js [app-client] (ecmascript) <locals> <export default as ConfigProvider>");
 ;
 var _s = __turbopack_context__.k.signature();
 "use client";
@@ -2667,15 +2613,16 @@ var _s = __turbopack_context__.k.signature();
 ;
 ;
 ;
+;
 const { Option } = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$antd$40$6$2e$1$2e$1_react$2d$dom$40$19$2e$2$2e$1_react$40$19$2e$2$2e$1_$5f$react$40$19$2e$2$2e$1$2f$node_modules$2f$antd$2f$es$2f$select$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Select$3e$__["Select"];
 function SelectCallingCode(t0) {
     _s();
-    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_babel$2d$plugin$2d$react$2d$compiler$40$1$2e$0$2e$0_react$2d$dom$40$19$2e$2$2e$1_react$40$19$2e$2$2e$1_$5f$react$40$19$2e$2$2e$1$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(14);
-    if ($[0] !== "45681781e5db009a40c8b2e0501e35ca56687f205ca876f60996ac549e124a03") {
-        for(let $i = 0; $i < 14; $i += 1){
+    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_babel$2d$plugin$2d$react$2d$compiler$40$1$2e$0$2e$0_react$2d$dom$40$19$2e$2$2e$1_react$40$19$2e$2$2e$1_$5f$react$40$19$2e$2$2e$1$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(18);
+    if ($[0] !== "cb6553d3d6b0b53d83f21099f5ad223bd345a3e07bdb6fe89097bcb6355bc4ba") {
+        for(let $i = 0; $i < 18; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "45681781e5db009a40c8b2e0501e35ca56687f205ca876f60996ac549e124a03";
+        $[0] = "cb6553d3d6b0b53d83f21099f5ad223bd345a3e07bdb6fe89097bcb6355bc4ba";
     }
     const { onChange } = t0;
     const [search, setSearch] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_babel$2d$plugin$2d$react$2d$compiler$40$1$2e$0$2e$0_react$2d$dom$40$19$2e$2$2e$1_react$40$19$2e$2$2e$1_$5f$react$40$19$2e$2$2e$1$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("");
@@ -2713,65 +2660,116 @@ function SelectCallingCode(t0) {
         t3 = $[5];
     }
     const handleChange = t3;
-    const t4 = selected || undefined;
-    let t5;
-    let t6;
+    let t4;
     if ($[6] === Symbol.for("react.memo_cache_sentinel")) {
-        t5 = {
+        t4 = {
+            token: {
+                colorBgContainer: "var(--select-bg)",
+                colorBorder: "var(--select-border)",
+                colorText: "var(--select-text)",
+                colorTextPlaceholder: "var(--select-placeholder)",
+                colorBgElevated: "var(--select-dropdown-bg)",
+                colorPrimaryHover: "var(--select-hover)",
+                controlOutline: "var(--select-outline)"
+            },
+            components: {
+                Select: {
+                    optionSelectedBg: "var(--select-selected-bg)",
+                    optionActiveBg: "var(--select-active-bg)"
+                }
+            }
+        };
+        $[6] = t4;
+    } else {
+        t4 = $[6];
+    }
+    const t5 = selected || undefined;
+    let t6;
+    let t7;
+    if ($[7] === Symbol.for("react.memo_cache_sentinel")) {
+        t6 = {
             height: 48,
             borderRadius: 8
         };
-        t6 = {
+        t7 = {
             borderRadius: 8
         };
-        $[6] = t5;
         $[7] = t6;
+        $[8] = t7;
     } else {
-        t5 = $[6];
         t6 = $[7];
-    }
-    let t7;
-    if ($[8] !== filteredCodes) {
-        t7 = filteredCodes.map(_SelectCallingCodeFilteredCodesMap);
-        $[8] = filteredCodes;
-        $[9] = t7;
-    } else {
-        t7 = $[9];
+        t7 = $[8];
     }
     let t8;
-    if ($[10] !== handleChange || $[11] !== t4 || $[12] !== t7) {
-        t8 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_babel$2d$plugin$2d$react$2d$compiler$40$1$2e$0$2e$0_react$2d$dom$40$19$2e$2$2e$1_react$40$19$2e$2$2e$1_$5f$react$40$19$2e$2$2e$1$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "w-20",
+    if ($[9] !== filteredCodes) {
+        t8 = filteredCodes.map(_SelectCallingCodeFilteredCodesMap);
+        $[9] = filteredCodes;
+        $[10] = t8;
+    } else {
+        t8 = $[10];
+    }
+    let t9;
+    if ($[11] !== handleChange || $[12] !== t5 || $[13] !== t8) {
+        t9 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_babel$2d$plugin$2d$react$2d$compiler$40$1$2e$0$2e$0_react$2d$dom$40$19$2e$2$2e$1_react$40$19$2e$2$2e$1_$5f$react$40$19$2e$2$2e$1$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$antd$40$6$2e$1$2e$1_react$2d$dom$40$19$2e$2$2e$1_react$40$19$2e$2$2e$1_$5f$react$40$19$2e$2$2e$1$2f$node_modules$2f$antd$2f$es$2f$config$2d$provider$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__ConfigProvider$3e$__["ConfigProvider"], {
+            theme: t4,
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_babel$2d$plugin$2d$react$2d$compiler$40$1$2e$0$2e$0_react$2d$dom$40$19$2e$2$2e$1_react$40$19$2e$2$2e$1_$5f$react$40$19$2e$2$2e$1$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$antd$40$6$2e$1$2e$1_react$2d$dom$40$19$2e$2$2e$1_react$40$19$2e$2$2e$1_$5f$react$40$19$2e$2$2e$1$2f$node_modules$2f$antd$2f$es$2f$select$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Select$3e$__["Select"], {
                 showSearch: true,
                 placeholder: "+44",
-                value: t4,
+                value: t5,
                 onChange: handleChange,
                 onSearch: setSearch,
                 filterOption: false,
-                className: "w-full",
+                className: "w-full calling-code-select",
                 dropdownMatchSelectWidth: 200,
-                style: t5,
-                dropdownStyle: t6,
-                children: t7
+                style: t6,
+                dropdownStyle: t7,
+                children: t8
             }, void 0, false, {
                 fileName: "[project]/src/components/common/SelectCallingCode.tsx",
-                lineNumber: 147,
-                columnNumber: 32
+                lineNumber: 106,
+                columnNumber: 37
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/components/common/SelectCallingCode.tsx",
-            lineNumber: 147,
+            lineNumber: 106,
             columnNumber: 10
         }, this);
-        $[10] = handleChange;
-        $[11] = t4;
-        $[12] = t7;
+        $[11] = handleChange;
+        $[12] = t5;
         $[13] = t8;
+        $[14] = t9;
     } else {
-        t8 = $[13];
+        t9 = $[14];
     }
-    return t8;
+    let t10;
+    if ($[15] === Symbol.for("react.memo_cache_sentinel")) {
+        t10 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_babel$2d$plugin$2d$react$2d$compiler$40$1$2e$0$2e$0_react$2d$dom$40$19$2e$2$2e$1_react$40$19$2e$2$2e$1_$5f$react$40$19$2e$2$2e$1$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$styled$2d$jsx$40$5$2e$1$2e$6_$40$babel$2b$core$40$7$2e$28$2e$5_react$40$19$2e$2$2e$1$2f$node_modules$2f$styled$2d$jsx$2f$style$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+            id: "961e7a6634a08a7d",
+            children: ":root{--select-bg:#fff;--select-border:#0006;--select-text:#000;--select-placeholder:#0000004d;--select-dropdown-bg:#fff;--select-hover:#0000000a;--select-outline:#0000001a;--select-selected-bg:#0000000d;--select-active-bg:#0000000a}.dark{--select-bg:#000;--select-border:#fff6;--select-text:#fff;--select-placeholder:#ffffff4d;--select-dropdown-bg:#000;--select-hover:#ffffff0a;--select-outline:#ffffff1a;--select-selected-bg:#ffffff0d;--select-active-bg:#ffffff0a}.calling-code-select .ant-select-selector{transition:all .2s;background-color:var(--select-bg)!important;border-color:var(--select-border)!important;color:var(--select-text)!important}.calling-code-select .ant-select-selector:hover{border-color:var(--select-text)!important}.calling-code-select .ant-select-selector:focus,.calling-code-select.ant-select-focused .ant-select-selector{border-color:var(--select-text)!important;box-shadow:0 0 0 2px var(--select-outline)!important}.calling-code-select .ant-select-selection-placeholder{color:var(--select-placeholder)!important}.calling-code-select .ant-select-selection-search-input,.calling-code-select .ant-select-arrow{color:var(--select-text)!important}.ant-select-dropdown{background-color:var(--select-dropdown-bg)!important;border:1px solid var(--select-border)!important}.ant-select-item{color:var(--select-text)!important}.ant-select-item-option-active{background-color:var(--select-active-bg)!important}.ant-select-item-option-selected{background-color:var(--select-selected-bg)!important}.ant-select-item-option:hover{background-color:var(--select-hover)!important}.calling-code-select .ant-select-clear{background-color:var(--select-bg)!important;color:var(--select-text)!important}"
+        }, void 0, false, void 0, this);
+        $[15] = t10;
+    } else {
+        t10 = $[15];
+    }
+    let t11;
+    if ($[16] !== t9) {
+        t11 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_babel$2d$plugin$2d$react$2d$compiler$40$1$2e$0$2e$0_react$2d$dom$40$19$2e$2$2e$1_react$40$19$2e$2$2e$1_$5f$react$40$19$2e$2$2e$1$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "w-20",
+            children: [
+                t9,
+                t10
+            ]
+        }, void 0, true, {
+            fileName: "[project]/src/components/common/SelectCallingCode.tsx",
+            lineNumber: 123,
+            columnNumber: 11
+        }, this);
+        $[16] = t9;
+        $[17] = t11;
+    } else {
+        t11 = $[17];
+    }
+    return t11;
 }
 _s(SelectCallingCode, "utoOxO+sx7EdDjRC0qyGpFmgS9M=");
 _c = SelectCallingCode;
@@ -2781,7 +2779,7 @@ function _SelectCallingCodeFilteredCodesMap(item_0, idx) {
         children: item_0.label
     }, idx, false, {
         fileName: "[project]/src/components/common/SelectCallingCode.tsx",
-        lineNumber: 158,
+        lineNumber: 132,
         columnNumber: 10
     }, this);
 }
@@ -2812,36 +2810,42 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$ne
 ;
 function HeroAuth() {
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_babel$2d$plugin$2d$react$2d$compiler$40$1$2e$0$2e$0_react$2d$dom$40$19$2e$2$2e$1_react$40$19$2e$2$2e$1_$5f$react$40$19$2e$2$2e$1$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(3);
-    if ($[0] !== "9e937226764d23ad899af2f51fdd2da5f3c886edf04131d7f55d0693d6bb2ff1") {
+    if ($[0] !== "c9f84c9cca6f913b207ec2106ae9c4ebf949bb96847961c60fa7a8cd0c4f6d93") {
         for(let $i = 0; $i < 3; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "9e937226764d23ad899af2f51fdd2da5f3c886edf04131d7f55d0693d6bb2ff1";
+        $[0] = "c9f84c9cca6f913b207ec2106ae9c4ebf949bb96847961c60fa7a8cd0c4f6d93";
     }
     let t0;
     if ($[1] === Symbol.for("react.memo_cache_sentinel")) {
         t0 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_babel$2d$plugin$2d$react$2d$compiler$40$1$2e$0$2e$0_react$2d$dom$40$19$2e$2$2e$1_react$40$19$2e$2$2e$1_$5f$react$40$19$2e$2$2e$1$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "mb-6",
-            children: [
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_babel$2d$plugin$2d$react$2d$compiler$40$1$2e$0$2e$0_react$2d$dom$40$19$2e$2$2e$1_react$40$19$2e$2$2e$1_$5f$react$40$19$2e$2$2e$1$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_babel$2d$plugin$2d$react$2d$compiler$40$1$2e$0$2e$0_react$2d$dom$40$19$2e$2$2e$1_react$40$19$2e$2$2e$1_$5f$react$40$19$2e$2$2e$1$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                    href: "/",
-                    className: "font-['Cormorant_Garamond',serif] text-[56px] font-light tracking-[4px] text-black relative inline-block",
-                    children: "JewelFx"
-                }, void 0, false, {
-                    fileName: "[project]/src/components/auth/HeroAuth.tsx",
-                    lineNumber: 13,
-                    columnNumber: 32
-                }, this),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_babel$2d$plugin$2d$react$2d$compiler$40$1$2e$0$2e$0_react$2d$dom$40$19$2e$2$2e$1_react$40$19$2e$2$2e$1_$5f$react$40$19$2e$2$2e$1$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "text-sm tracking-[3px] uppercase text-black/60 font-light",
-                    children: "Design • Digitize • Deliver"
-                }, void 0, false, {
-                    fileName: "[project]/src/components/auth/HeroAuth.tsx",
-                    lineNumber: 13,
-                    columnNumber: 178
-                }, this)
-            ]
-        }, void 0, true, {
+            className: "mb-6 flex items-start justify-between",
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_babel$2d$plugin$2d$react$2d$compiler$40$1$2e$0$2e$0_react$2d$dom$40$19$2e$2$2e$1_react$40$19$2e$2$2e$1_$5f$react$40$19$2e$2$2e$1$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_babel$2d$plugin$2d$react$2d$compiler$40$1$2e$0$2e$0_react$2d$dom$40$19$2e$2$2e$1_react$40$19$2e$2$2e$1_$5f$react$40$19$2e$2$2e$1$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_babel$2d$plugin$2d$react$2d$compiler$40$1$2e$0$2e$0_react$2d$dom$40$19$2e$2$2e$1_react$40$19$2e$2$2e$1_$5f$react$40$19$2e$2$2e$1$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                        href: "/",
+                        className: "font-['Cormorant_Garamond',serif] text-[56px] font-light tracking-[4px] text-black dark:text-white relative inline-block transition-colors",
+                        children: "JewelFx"
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/auth/HeroAuth.tsx",
+                        lineNumber: 13,
+                        columnNumber: 70
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_babel$2d$plugin$2d$react$2d$compiler$40$1$2e$0$2e$0_react$2d$dom$40$19$2e$2$2e$1_react$40$19$2e$2$2e$1_$5f$react$40$19$2e$2$2e$1$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "text-sm tracking-[3px] uppercase text-black/60 dark:text-white/60 font-light transition-colors",
+                        children: "Design • Digitize • Deliver"
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/auth/HeroAuth.tsx",
+                        lineNumber: 13,
+                        columnNumber: 250
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/components/auth/HeroAuth.tsx",
+                lineNumber: 13,
+                columnNumber: 65
+            }, this)
+        }, void 0, false, {
             fileName: "[project]/src/components/auth/HeroAuth.tsx",
             lineNumber: 13,
             columnNumber: 10
@@ -2853,7 +2857,7 @@ function HeroAuth() {
     let t1;
     if ($[2] === Symbol.for("react.memo_cache_sentinel")) {
         t1 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_babel$2d$plugin$2d$react$2d$compiler$40$1$2e$0$2e$0_react$2d$dom$40$19$2e$2$2e$1_react$40$19$2e$2$2e$1_$5f$react$40$19$2e$2$2e$1$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "hidden md:flex flex-1 p-15 flex-col bg-linear-to-br from-white to-[#f5f5f5]",
+            className: "hidden md:flex flex-1 p-15 flex-col bg-white dark:bg-black transition-colors",
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_babel$2d$plugin$2d$react$2d$compiler$40$1$2e$0$2e$0_react$2d$dom$40$19$2e$2$2e$1_react$40$19$2e$2$2e$1_$5f$react$40$19$2e$2$2e$1$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "max-w-150 animate-[fadeInUp_0.8s_ease-out]",
                 children: [
@@ -2889,13 +2893,13 @@ function HeroAuth() {
                     }, void 0, false, {
                         fileName: "[project]/src/components/auth/HeroAuth.tsx",
                         lineNumber: 20,
-                        columnNumber: 167
+                        columnNumber: 168
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/auth/HeroAuth.tsx",
                 lineNumber: 20,
-                columnNumber: 103
+                columnNumber: 104
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/components/auth/HeroAuth.tsx",
@@ -2911,39 +2915,39 @@ function HeroAuth() {
 _c = HeroAuth;
 function _HeroAuthAnonymous(feature, idx) {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_babel$2d$plugin$2d$react$2d$compiler$40$1$2e$0$2e$0_react$2d$dom$40$19$2e$2$2e$1_react$40$19$2e$2$2e$1_$5f$react$40$19$2e$2$2e$1$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "group p-6 border rounded-xl border-black/10 bg-white/70 backdrop-blur\n                 transition-all duration-300 hover:border-black/25 hover:bg-white hover:-translate-y-1\n                 hover:shadow-[0_18px_50px_rgba(0,0,0,0.08)]",
+        className: "group p-6 border rounded-xl \n                         border-black/10 dark:border-white/10\n                         bg-white dark:bg-black\n                         backdrop-blur\n                         transition-all duration-300 \n                         hover:border-black/25 dark:hover:border-white/25\n                         hover:-translate-y-1\n                         hover:shadow-[0_18px_50px_rgba(0,0,0,0.08)]\n                         dark:hover:shadow-[0_18px_50px_rgba(255,255,255,0.08)]",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_babel$2d$plugin$2d$react$2d$compiler$40$1$2e$0$2e$0_react$2d$dom$40$19$2e$2$2e$1_react$40$19$2e$2$2e$1_$5f$react$40$19$2e$2$2e$1$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "flex items-start justify-between gap-3",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_babel$2d$plugin$2d$react$2d$compiler$40$1$2e$0$2e$0_react$2d$dom$40$19$2e$2$2e$1_react$40$19$2e$2$2e$1_$5f$react$40$19$2e$2$2e$1$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "text-sm font-semibold uppercase tracking-wider text-black",
+                        className: "text-sm font-semibold uppercase tracking-wider text-black dark:text-white transition-colors",
                         children: feature.title
                     }, void 0, false, {
                         fileName: "[project]/src/components/auth/HeroAuth.tsx",
                         lineNumber: 46,
-                        columnNumber: 331
+                        columnNumber: 604
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_babel$2d$plugin$2d$react$2d$compiler$40$1$2e$0$2e$0_react$2d$dom$40$19$2e$2$2e$1_react$40$19$2e$2$2e$1_$5f$react$40$19$2e$2$2e$1$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "h-2 w-2 rounded-full bg-black/20 group-hover:bg-black/60 transition-colors"
+                        className: "h-2 w-2 rounded-full bg-black/20 dark:bg-white/20 group-hover:bg-black/60 dark:group-hover:bg-white/60 transition-colors"
                     }, void 0, false, {
                         fileName: "[project]/src/components/auth/HeroAuth.tsx",
                         lineNumber: 46,
-                        columnNumber: 427
+                        columnNumber: 734
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/auth/HeroAuth.tsx",
                 lineNumber: 46,
-                columnNumber: 275
+                columnNumber: 548
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_babel$2d$plugin$2d$react$2d$compiler$40$1$2e$0$2e$0_react$2d$dom$40$19$2e$2$2e$1_react$40$19$2e$2$2e$1_$5f$react$40$19$2e$2$2e$1$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "mt-3 text-[13px] text-black/60 leading-relaxed",
+                className: "mt-3 text-[13px] text-black/60 dark:text-white/60 leading-relaxed transition-colors",
                 children: feature.desc
             }, void 0, false, {
                 fileName: "[project]/src/components/auth/HeroAuth.tsx",
                 lineNumber: 46,
-                columnNumber: 527
+                columnNumber: 880
             }, this)
         ]
     }, idx, true, {
@@ -2986,11 +2990,11 @@ var _s = __turbopack_context__.k.signature();
 function JewelFxRegistration() {
     _s();
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_babel$2d$plugin$2d$react$2d$compiler$40$1$2e$0$2e$0_react$2d$dom$40$19$2e$2$2e$1_react$40$19$2e$2$2e$1_$5f$react$40$19$2e$2$2e$1$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(82);
-    if ($[0] !== "98fcc3aa069637d85391e96b922f496701d1c1023d8e1079066d94997cd0959c") {
+    if ($[0] !== "f29d18531e7f24dd5c2947b416b36079220cd509c0813442589d5779b970c99f") {
         for(let $i = 0; $i < 82; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "98fcc3aa069637d85391e96b922f496701d1c1023d8e1079066d94997cd0959c";
+        $[0] = "f29d18531e7f24dd5c2947b416b36079220cd509c0813442589d5779b970c99f";
     }
     let t0;
     if ($[1] === Symbol.for("react.memo_cache_sentinel")) {
@@ -3085,7 +3089,7 @@ function JewelFxRegistration() {
             className: "mb-10 text-center",
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_babel$2d$plugin$2d$react$2d$compiler$40$1$2e$0$2e$0_react$2d$dom$40$19$2e$2$2e$1_react$40$19$2e$2$2e$1_$5f$react$40$19$2e$2$2e$1$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                    className: "font-['Cormorant_Garamond',serif] text-[36px] sm:text-[42px] font-normal mb-3 relative inline-block after:content-[''] after:absolute after:-bottom-2 after:left-1/2 after:-translate-x-1/2 after:w-15 after:h-px after:bg-black/50",
+                    className: "font-['Cormorant_Garamond',serif] text-[36px] sm:text-[42px] font-normal mb-3 relative inline-block after:content-[''] after:absolute after:-bottom-2 after:left-1/2 after:-translate-x-1/2 after:w-15 after:h-px after:bg-black/50 dark:after:bg-white/50",
                     children: "Sign Up"
                 }, void 0, false, {
                     fileName: "[project]/src/app/auth/signup/page.tsx",
@@ -3093,12 +3097,12 @@ function JewelFxRegistration() {
                     columnNumber: 45
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_babel$2d$plugin$2d$react$2d$compiler$40$1$2e$0$2e$0_react$2d$dom$40$19$2e$2$2e$1_react$40$19$2e$2$2e$1_$5f$react$40$19$2e$2$2e$1$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                    className: "text-black/60 text-sm mt-4 font-light",
+                    className: "text-black/60 dark:text-white/60 text-sm mt-4 font-light transition-colors",
                     children: "Enter your details to create an account"
                 }, void 0, false, {
                     fileName: "[project]/src/app/auth/signup/page.tsx",
                     lineNumber: 105,
-                    columnNumber: 301
+                    columnNumber: 324
                 }, this)
             ]
         }, void 0, true, {
@@ -3113,7 +3117,7 @@ function JewelFxRegistration() {
     let t5;
     if ($[15] === Symbol.for("react.memo_cache_sentinel")) {
         t5 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_babel$2d$plugin$2d$react$2d$compiler$40$1$2e$0$2e$0_react$2d$dom$40$19$2e$2$2e$1_react$40$19$2e$2$2e$1_$5f$react$40$19$2e$2$2e$1$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-            className: "text-xs uppercase tracking-[1.5px] text-black/70",
+            className: "text-xs uppercase tracking-[1.5px] text-black/70 dark:text-white/70 transition-colors",
             children: "First Name"
         }, void 0, false, {
             fileName: "[project]/src/app/auth/signup/page.tsx",
@@ -3137,7 +3141,7 @@ function JewelFxRegistration() {
                     onChange: handleChange,
                     placeholder: "John",
                     required: true,
-                    className: "w-full bg-white border border-black/40 rounded-md px-3 py-3 text-black text-[15px] outline-none transition-all duration-200 focus:border-black focus:ring-2 focus:ring-black/10 placeholder:text-black/30"
+                    className: "w-full bg-white dark:bg-black border border-black/40 dark:border-white/40 rounded-md px-3 py-3 text-black dark:text-white text-[15px] outline-none transition-all duration-200 focus:border-black dark:focus:border-white focus:ring-2 focus:ring-black/10 dark:focus:ring-white/10 placeholder:text-black/30 dark:placeholder:text-white/30"
                 }, void 0, false, {
                     fileName: "[project]/src/app/auth/signup/page.tsx",
                     lineNumber: 119,
@@ -3157,7 +3161,7 @@ function JewelFxRegistration() {
     let t7;
     if ($[18] === Symbol.for("react.memo_cache_sentinel")) {
         t7 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_babel$2d$plugin$2d$react$2d$compiler$40$1$2e$0$2e$0_react$2d$dom$40$19$2e$2$2e$1_react$40$19$2e$2$2e$1_$5f$react$40$19$2e$2$2e$1$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-            className: "text-xs uppercase tracking-[1.5px] text-black/70",
+            className: "text-xs uppercase tracking-[1.5px] text-black/70 dark:text-white/70 transition-colors",
             children: "Last Name"
         }, void 0, false, {
             fileName: "[project]/src/app/auth/signup/page.tsx",
@@ -3181,7 +3185,7 @@ function JewelFxRegistration() {
                     onChange: handleChange,
                     placeholder: "Doe",
                     required: true,
-                    className: "w-full bg-white border border-black/40 rounded-md px-3 py-3 text-black text-[15px] outline-none transition-all duration-200 focus:border-black focus:ring-2 focus:ring-black/10 placeholder:text-black/30"
+                    className: "w-full bg-white dark:bg-black border border-black/40 dark:border-white/40 rounded-md px-3 py-3 text-black dark:text-white text-[15px] outline-none transition-all duration-200 focus:border-black dark:focus:border-white focus:ring-2 focus:ring-black/10 dark:focus:ring-white/10 placeholder:text-black/30 dark:placeholder:text-white/30"
                 }, void 0, false, {
                     fileName: "[project]/src/app/auth/signup/page.tsx",
                     lineNumber: 134,
@@ -3220,7 +3224,7 @@ function JewelFxRegistration() {
     let t10;
     if ($[24] === Symbol.for("react.memo_cache_sentinel")) {
         t10 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_babel$2d$plugin$2d$react$2d$compiler$40$1$2e$0$2e$0_react$2d$dom$40$19$2e$2$2e$1_react$40$19$2e$2$2e$1_$5f$react$40$19$2e$2$2e$1$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-            className: "text-xs uppercase tracking-[1.5px] text-black/70",
+            className: "text-xs uppercase tracking-[1.5px] text-black/70 dark:text-white/70 transition-colors",
             children: "Email"
         }, void 0, false, {
             fileName: "[project]/src/app/auth/signup/page.tsx",
@@ -3244,7 +3248,7 @@ function JewelFxRegistration() {
                     onChange: handleChange,
                     placeholder: "you@company.com",
                     required: true,
-                    className: "w-full bg-white border border-black/40 rounded-md px-3 py-3 text-black text-[15px] outline-none transition-all duration-200 focus:border-black focus:ring-2 focus:ring-black/10 placeholder:text-black/30"
+                    className: "w-full bg-white dark:bg-black border border-black/40 dark:border-white/40 rounded-md px-3 py-3 text-black dark:text-white text-[15px] outline-none transition-all duration-200 focus:border-black dark:focus:border-white focus:ring-2 focus:ring-black/10 dark:focus:ring-white/10 placeholder:text-black/30 dark:placeholder:text-white/30"
                 }, void 0, false, {
                     fileName: "[project]/src/app/auth/signup/page.tsx",
                     lineNumber: 158,
@@ -3264,7 +3268,7 @@ function JewelFxRegistration() {
     let t12;
     if ($[27] === Symbol.for("react.memo_cache_sentinel")) {
         t12 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_babel$2d$plugin$2d$react$2d$compiler$40$1$2e$0$2e$0_react$2d$dom$40$19$2e$2$2e$1_react$40$19$2e$2$2e$1_$5f$react$40$19$2e$2$2e$1$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-            className: "text-xs uppercase tracking-[1.5px] text-black/70",
+            className: "text-xs uppercase tracking-[1.5px] text-black/70 dark:text-white/70 transition-colors",
             children: "Phone (optional)"
         }, void 0, false, {
             fileName: "[project]/src/app/auth/signup/page.tsx",
@@ -3311,7 +3315,7 @@ function JewelFxRegistration() {
                             value: formData.phone,
                             onChange: handleChange,
                             placeholder: "(555) 000-0000",
-                            className: "w-full bg-white border border-black/40 rounded-md px-3 py-3 text-black text-[15px] outline-none transition-all duration-200 focus:border-black focus:ring-2 focus:ring-black/10 placeholder:text-black/30"
+                            className: "w-full bg-white dark:bg-black border border-black/40 dark:border-white/40 rounded-md px-3 py-3 text-black dark:text-white text-[15px] outline-none transition-all duration-200 focus:border-black dark:focus:border-white focus:ring-2 focus:ring-black/10 dark:focus:ring-white/10 placeholder:text-black/30 dark:placeholder:text-white/30"
                         }, void 0, false, {
                             fileName: "[project]/src/app/auth/signup/page.tsx",
                             lineNumber: 187,
@@ -3337,7 +3341,7 @@ function JewelFxRegistration() {
     let t15;
     if ($[31] === Symbol.for("react.memo_cache_sentinel")) {
         t15 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_babel$2d$plugin$2d$react$2d$compiler$40$1$2e$0$2e$0_react$2d$dom$40$19$2e$2$2e$1_react$40$19$2e$2$2e$1_$5f$react$40$19$2e$2$2e$1$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-            className: "text-xs uppercase tracking-[1.5px] text-black/70",
+            className: "text-xs uppercase tracking-[1.5px] text-black/70 dark:text-white/70 transition-colors",
             children: "Role"
         }, void 0, false, {
             fileName: "[project]/src/app/auth/signup/page.tsx",
@@ -3416,7 +3420,7 @@ function JewelFxRegistration() {
                     name: "role",
                     value: formData.role,
                     onChange: handleChange,
-                    className: "w-full bg-white border border-black/40 rounded-md px-3 py-3 text-black text-[15px] outline-none transition-all duration-200 focus:border-black focus:ring-2 focus:ring-black/10 placeholder:text-black/30 cursor-pointer appearance-none pr-10 bg-[url('data:image/svg+xml,%3Csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20width=%2712%27%20height=%2712%27%20viewBox=%270%200%2012%2012%27%3E%3Cpath%20fill=%27%23000000%27%20d=%27M6%209L1%204h10z%27/%3E%3C/svg%3E')] bg-no-repeat bg-position-[right_0.75rem_center]",
+                    className: "w-full bg-white dark:bg-black border border-black/40 dark:border-white/40 rounded-md px-3 py-3 text-black dark:text-white text-[15px] outline-none transition-all duration-200 focus:border-black dark:focus:border-white focus:ring-2 focus:ring-black/10 dark:focus:ring-white/10 placeholder:text-black/30 dark:placeholder:text-white/30 cursor-pointer appearance-none pr-10 bg-[url('data:image/svg+xml,%3Csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20width=%2712%27%20height=%2712%27%20viewBox=%270%200%2012%2012%27%3E%3Cpath%20fill=%27%23000000%27%20d=%27M6%209L1%204h10z%27/%3E%3C/svg%3E')] dark:bg-[url('data:image/svg+xml,%3Csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20width=%2712%27%20height=%2712%27%20viewBox=%270%200%2012%2012%27%3E%3Cpath%20fill=%27%23ffffff%27%20d=%27M6%209L1%204h10z%27/%3E%3C/svg%3E')] bg-no-repeat bg-position-[right_0.75rem_center]",
                     children: [
                         t16,
                         t17,
@@ -3443,7 +3447,7 @@ function JewelFxRegistration() {
     let t22;
     if ($[39] === Symbol.for("react.memo_cache_sentinel")) {
         t22 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_babel$2d$plugin$2d$react$2d$compiler$40$1$2e$0$2e$0_react$2d$dom$40$19$2e$2$2e$1_react$40$19$2e$2$2e$1_$5f$react$40$19$2e$2$2e$1$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-            className: "text-xs uppercase tracking-[1.5px] text-black/70",
+            className: "text-xs uppercase tracking-[1.5px] text-black/70 dark:text-white/70 transition-colors",
             children: "Business Info (optional)"
         }, void 0, false, {
             fileName: "[project]/src/app/auth/signup/page.tsx",
@@ -3466,7 +3470,7 @@ function JewelFxRegistration() {
                     onChange: handleChange,
                     placeholder: "Business name, type, location, anything you'd like to share...",
                     rows: 3,
-                    className: "w-full bg-white border border-black/40 rounded-md px-3 py-3 text-black text-[15px] outline-none transition-all duration-200 focus:border-black focus:ring-2 focus:ring-black/10 placeholder:text-black/30 resize-none"
+                    className: "w-full bg-white dark:bg-black border border-black/40 dark:border-white/40 rounded-md px-3 py-3 text-black dark:text-white text-[15px] outline-none transition-all duration-200 focus:border-black dark:focus:border-white focus:ring-2 focus:ring-black/10 dark:focus:ring-white/10 placeholder:text-black/30 dark:placeholder:text-white/30 resize-none"
                 }, void 0, false, {
                     fileName: "[project]/src/app/auth/signup/page.tsx",
                     lineNumber: 240,
@@ -3486,7 +3490,7 @@ function JewelFxRegistration() {
     let t24;
     if ($[42] === Symbol.for("react.memo_cache_sentinel")) {
         t24 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_babel$2d$plugin$2d$react$2d$compiler$40$1$2e$0$2e$0_react$2d$dom$40$19$2e$2$2e$1_react$40$19$2e$2$2e$1_$5f$react$40$19$2e$2$2e$1$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-            className: "text-xs uppercase tracking-[1.5px] text-black/70",
+            className: "text-xs uppercase tracking-[1.5px] text-black/70 dark:text-white/70 transition-colors",
             children: "Password"
         }, void 0, false, {
             fileName: "[project]/src/app/auth/signup/page.tsx",
@@ -3508,7 +3512,7 @@ function JewelFxRegistration() {
             placeholder: "Min. 8 characters",
             required: true,
             minLength: 8,
-            className: "w-full bg-white border border-black/40 rounded-md px-3 py-3 text-black text-[15px] outline-none transition-all duration-200 focus:border-black focus:ring-2 focus:ring-black/10 placeholder:text-black/30 pr-12"
+            className: "w-full bg-white dark:bg-black border border-black/40 dark:border-white/40 rounded-md px-3 py-3 text-black dark:text-white text-[15px] outline-none transition-all duration-200 focus:border-black dark:focus:border-white focus:ring-2 focus:ring-black/10 dark:focus:ring-white/10 placeholder:text-black/30 dark:placeholder:text-white/30 pr-12"
         }, void 0, false, {
             fileName: "[project]/src/app/auth/signup/page.tsx",
             lineNumber: 256,
@@ -3534,16 +3538,16 @@ function JewelFxRegistration() {
         t28 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_babel$2d$plugin$2d$react$2d$compiler$40$1$2e$0$2e$0_react$2d$dom$40$19$2e$2$2e$1_react$40$19$2e$2$2e$1_$5f$react$40$19$2e$2$2e$1$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
             type: "button",
             onClick: t27,
-            className: "absolute right-2 top-1/2 -translate-y-1/2 bg-transparent border-none text-black/60 cursor-pointer p-2 hover:text-black",
+            className: "absolute right-2 top-1/2 -translate-y-1/2 bg-transparent border-none text-black/60 dark:text-white/60 cursor-pointer p-2 hover:text-black dark:hover:text-white transition-colors",
             "aria-label": "Toggle password visibility",
             children: showPassword ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_babel$2d$plugin$2d$react$2d$compiler$40$1$2e$0$2e$0_react$2d$dom$40$19$2e$2$2e$1_react$40$19$2e$2$2e$1_$5f$react$40$19$2e$2$2e$1$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$2d$icons$40$5$2e$5$2e$0_react$40$19$2e$2$2e$1$2f$node_modules$2f$react$2d$icons$2f$pi$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["PiEyeglassesBold"], {}, void 0, false, {
                 fileName: "[project]/src/app/auth/signup/page.tsx",
                 lineNumber: 274,
-                columnNumber: 234
+                columnNumber: 293
             }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_babel$2d$plugin$2d$react$2d$compiler$40$1$2e$0$2e$0_react$2d$dom$40$19$2e$2$2e$1_react$40$19$2e$2$2e$1_$5f$react$40$19$2e$2$2e$1$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$2d$icons$40$5$2e$5$2e$0_react$40$19$2e$2$2e$1$2f$node_modules$2f$react$2d$icons$2f$pi$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["PiEyeglassesFill"], {}, void 0, false, {
                 fileName: "[project]/src/app/auth/signup/page.tsx",
                 lineNumber: 274,
-                columnNumber: 257
+                columnNumber: 316
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/app/auth/signup/page.tsx",
@@ -3587,7 +3591,7 @@ function JewelFxRegistration() {
     let t30;
     if ($[52] === Symbol.for("react.memo_cache_sentinel")) {
         t30 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_babel$2d$plugin$2d$react$2d$compiler$40$1$2e$0$2e$0_react$2d$dom$40$19$2e$2$2e$1_react$40$19$2e$2$2e$1_$5f$react$40$19$2e$2$2e$1$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-            className: "text-xs uppercase tracking-[1.5px] text-black/70",
+            className: "text-xs uppercase tracking-[1.5px] text-black/70 dark:text-white/70 transition-colors",
             children: "Confirm Password"
         }, void 0, false, {
             fileName: "[project]/src/app/auth/signup/page.tsx",
@@ -3609,7 +3613,7 @@ function JewelFxRegistration() {
             placeholder: "Re-enter password",
             required: true,
             minLength: 8,
-            className: "w-full bg-white border border-black/40 rounded-md px-3 py-3 text-black text-[15px] outline-none transition-all duration-200 focus:border-black focus:ring-2 focus:ring-black/10 placeholder:text-black/30 pr-12"
+            className: "w-full bg-white dark:bg-black border border-black/40 dark:border-white/40 rounded-md px-3 py-3 text-black dark:text-white text-[15px] outline-none transition-all duration-200 focus:border-black dark:focus:border-white focus:ring-2 focus:ring-black/10 dark:focus:ring-white/10 placeholder:text-black/30 dark:placeholder:text-white/30 pr-12"
         }, void 0, false, {
             fileName: "[project]/src/app/auth/signup/page.tsx",
             lineNumber: 299,
@@ -3635,16 +3639,16 @@ function JewelFxRegistration() {
         t34 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_babel$2d$plugin$2d$react$2d$compiler$40$1$2e$0$2e$0_react$2d$dom$40$19$2e$2$2e$1_react$40$19$2e$2$2e$1_$5f$react$40$19$2e$2$2e$1$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
             type: "button",
             onClick: t33,
-            className: "absolute right-2 top-1/2 -translate-y-1/2 bg-transparent border-none text-black/60 cursor-pointer p-2 hover:text-black",
+            className: "absolute right-2 top-1/2 -translate-y-1/2 bg-transparent border-none text-black/60 dark:text-white/60 cursor-pointer p-2 hover:text-black dark:hover:text-white transition-colors",
             "aria-label": "Toggle confirm password visibility",
             children: showConfirmPassword ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_babel$2d$plugin$2d$react$2d$compiler$40$1$2e$0$2e$0_react$2d$dom$40$19$2e$2$2e$1_react$40$19$2e$2$2e$1_$5f$react$40$19$2e$2$2e$1$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$2d$icons$40$5$2e$5$2e$0_react$40$19$2e$2$2e$1$2f$node_modules$2f$react$2d$icons$2f$pi$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["PiEyeglassesBold"], {}, void 0, false, {
                 fileName: "[project]/src/app/auth/signup/page.tsx",
                 lineNumber: 317,
-                columnNumber: 249
+                columnNumber: 308
             }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_babel$2d$plugin$2d$react$2d$compiler$40$1$2e$0$2e$0_react$2d$dom$40$19$2e$2$2e$1_react$40$19$2e$2$2e$1_$5f$react$40$19$2e$2$2e$1$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$2d$icons$40$5$2e$5$2e$0_react$40$19$2e$2$2e$1$2f$node_modules$2f$react$2d$icons$2f$pi$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["PiEyeglassesFill"], {}, void 0, false, {
                 fileName: "[project]/src/app/auth/signup/page.tsx",
                 lineNumber: 317,
-                columnNumber: 272
+                columnNumber: 331
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/app/auth/signup/page.tsx",
@@ -3707,7 +3711,7 @@ function JewelFxRegistration() {
     let t37;
     if ($[65] !== error) {
         t37 = error && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_babel$2d$plugin$2d$react$2d$compiler$40$1$2e$0$2e$0_react$2d$dom$40$19$2e$2$2e$1_react$40$19$2e$2$2e$1_$5f$react$40$19$2e$2$2e$1$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "text-sm text-black bg-black/5 border border-black/15 px-4 py-3 rounded-md",
+            className: "text-sm text-black dark:text-white bg-black/5 dark:bg-white/5 border border-black/15 dark:border-white/15 px-4 py-3 rounded-md transition-colors",
             children: error
         }, void 0, false, {
             fileName: "[project]/src/app/auth/signup/page.tsx",
@@ -3724,7 +3728,7 @@ function JewelFxRegistration() {
     if ($[67] === Symbol.for("react.memo_cache_sentinel")) {
         t38 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_babel$2d$plugin$2d$react$2d$compiler$40$1$2e$0$2e$0_react$2d$dom$40$19$2e$2$2e$1_react$40$19$2e$2$2e$1_$5f$react$40$19$2e$2$2e$1$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
             type: "submit",
-            className: "mt-1 px-8 py-4 bg-black text-white border border-black text-[13px] font-medium uppercase tracking-[2px] cursor-pointer transition-all duration-300 hover:bg-white hover:text-black hover:border-black hover:-translate-y-0.5 active:translate-y-0 rounded-md",
+            className: "mt-1 px-8 py-4 bg-black dark:bg-white text-white dark:text-black border border-black dark:border-white text-[13px] font-medium uppercase tracking-[2px] cursor-pointer transition-all duration-300 hover:bg-white dark:hover:bg-black hover:text-black dark:hover:text-white hover:border-black dark:hover:border-white hover:-translate-y-0.5 active:translate-y-0 rounded-md",
             children: "Create Account"
         }, void 0, false, {
             fileName: "[project]/src/app/auth/signup/page.tsx",
@@ -3732,7 +3736,7 @@ function JewelFxRegistration() {
             columnNumber: 11
         }, this);
         t39 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_babel$2d$plugin$2d$react$2d$compiler$40$1$2e$0$2e$0_react$2d$dom$40$19$2e$2$2e$1_react$40$19$2e$2$2e$1_$5f$react$40$19$2e$2$2e$1$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "w-full h-px bg-black/10 my-6"
+            className: "w-full h-px bg-black/10 dark:bg-white/10 my-6 transition-colors"
         }, void 0, false, {
             fileName: "[project]/src/app/auth/signup/page.tsx",
             lineNumber: 353,
@@ -3747,18 +3751,18 @@ function JewelFxRegistration() {
     let t40;
     if ($[69] === Symbol.for("react.memo_cache_sentinel")) {
         t40 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_babel$2d$plugin$2d$react$2d$compiler$40$1$2e$0$2e$0_react$2d$dom$40$19$2e$2$2e$1_react$40$19$2e$2$2e$1_$5f$react$40$19$2e$2$2e$1$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "text-center text-sm text-black/60",
+            className: "text-center text-sm text-black/60 dark:text-white/60 transition-colors",
             children: [
                 "Already have an account?",
                 " ",
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_babel$2d$plugin$2d$react$2d$compiler$40$1$2e$0$2e$0_react$2d$dom$40$19$2e$2$2e$1_react$40$19$2e$2$2e$1_$5f$react$40$19$2e$2$2e$1$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_babel$2d$plugin$2d$react$2d$compiler$40$1$2e$0$2e$0_react$2d$dom$40$19$2e$2$2e$1_react$40$19$2e$2$2e$1_$5f$react$40$19$2e$2$2e$1$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                     href: "/auth/signin",
-                    className: "text-black underline underline-offset-4 hover:opacity-80",
+                    className: "text-black dark:text-white underline underline-offset-4 hover:opacity-80 transition-colors",
                     children: "Sign In"
                 }, void 0, false, {
                     fileName: "[project]/src/app/auth/signup/page.tsx",
                     lineNumber: 362,
-                    columnNumber: 91
+                    columnNumber: 128
                 }, this)
             ]
         }, void 0, true, {
@@ -3777,7 +3781,7 @@ function JewelFxRegistration() {
             children: [
                 t3,
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_babel$2d$plugin$2d$react$2d$compiler$40$1$2e$0$2e$0_react$2d$dom$40$19$2e$2$2e$1_react$40$19$2e$2$2e$1_$5f$react$40$19$2e$2$2e$1$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "flex-1 w-full p-6 sm:p-10 md:p-15 flex items-center justify-center bg-white",
+                    className: "flex-1 w-full p-6 sm:p-10 md:p-15 flex items-center justify-center bg-white dark:bg-black transition-colors",
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_babel$2d$plugin$2d$react$2d$compiler$40$1$2e$0$2e$0_react$2d$dom$40$19$2e$2$2e$1_react$40$19$2e$2$2e$1_$5f$react$40$19$2e$2$2e$1$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "w-full max-w-130 animate-[fadeInUp_1s_ease-out_0.2s_both]",
                         children: [
@@ -3800,13 +3804,13 @@ function JewelFxRegistration() {
                             }, void 0, true, {
                                 fileName: "[project]/src/app/auth/signup/page.tsx",
                                 lineNumber: 369,
-                                columnNumber: 235
+                                columnNumber: 267
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/auth/signup/page.tsx",
                         lineNumber: 369,
-                        columnNumber: 156
+                        columnNumber: 188
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/app/auth/signup/page.tsx",
@@ -3844,7 +3848,7 @@ function JewelFxRegistration() {
     let t43;
     if ($[80] !== t41) {
         t43 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_babel$2d$plugin$2d$react$2d$compiler$40$1$2e$0$2e$0_react$2d$dom$40$19$2e$2$2e$1_react$40$19$2e$2$2e$1_$5f$react$40$19$2e$2$2e$1$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "min-h-screen bg-white text-black relative overflow-hidden",
+            className: "min-h-screen bg-white dark:bg-black text-black dark:text-white relative overflow-hidden transition-colors",
             children: [
                 t41,
                 t42

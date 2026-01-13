@@ -3,3 +3,1401 @@
 [00:00:18.325] Browser ERROR   Warning: [antd: Select] `dropdownMatchSelectWidth` is deprecated. Please use `popupMatchSelectWidth` instead.
 [00:00:18.325] Browser ERROR   Warning: [antd: Select] `dropdownStyle` is deprecated. Please use `styles.popup.root` instead.
 [00:00:18.325] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:20:37.990] Server  LOG      ✓ Compiled in 43ms
+[00:21:07.988] Server  ERROR   Warning: [antd: Select] `dropdownMatchSelectWidth` is deprecated. Please use `popupMatchSelectWidth` instead.
+[00:21:07.989] Server  ERROR   Warning: [antd: Select] `dropdownStyle` is deprecated. Please use `styles.popup.root` instead.
+[00:21:08.095] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:21:08.931] Browser ERROR   Warning: [antd: Select] `dropdownMatchSelectWidth` is deprecated. Please use `popupMatchSelectWidth` instead.
+[00:21:08.931] Browser ERROR   Warning: [antd: Select] `dropdownStyle` is deprecated. Please use `styles.popup.root` instead.
+[00:21:08.931] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <RenderFromTemplateContext>
+      <ScrollAndFocusHandler segmentPath={[...]}>
+        <InnerScrollAndFocusHandler segmentPath={[...]} focusAndScrollRef={{apply:false, ...}}>
+          <ErrorBoundary errorComponent={undefined} errorStyles={undefined} errorScripts={undefined}>
+            <LoadingBoundary name="signup/" loading={null}>
+              <HTTPAccessFallbackBoundary notFound={undefined} forbidden={undefined} unauthorized={undefined}>
+                <RedirectBoundary>
+                  <RedirectErrorBoundary router={{...}}>
+                    <InnerLayoutRouter url="/auth/signup" tree={[...]} params={{}} cacheNode={{lazyData:null, ...}} ...>
+                      <SegmentViewNode type="page" pagePath="auth/signu...">
+                        <SegmentTrieNode>
+                        <ClientPageRoot Component={function JewelFxRegistration} serverProvidedParams={{...}}>
+                          <JewelFxRegistration params={Promise} searchParams={Promise}>
+                            <div
++                             className="min-h-screen bg-white text-black relative overflow-hidden"
+-                             className="jsx-c8095f7b9a3b8680 min-h-screen bg-white text-black relative overflow-hidden"
+                            >
+                              <div
++                               className="relative z-1 flex min-h-screen"
+-                               className="jsx-c8095f7b9a3b8680 relative z-1 flex min-h-screen"
+                              >
+                                <HeroAuth>
+                                  <div className="hidden md:...">
+                                    <div className="max-w-150 ...">
+                                      <div>
+                                      <div className="grid grid-...">
+                                        <div
++                                         className={"group p-6 border rounded-xl border-black/10 bg-white/70 backdro..."}
+-                                         className="group p-6 border rounded-xl border-black/10 bg-white/70 backdrop-..."
+                                        >
+                                        <div
++                                         className={"group p-6 border rounded-xl border-black/10 bg-white/70 backdro..."}
+-                                         className="group p-6 border rounded-xl border-black/10 bg-white/70 backdrop-..."
+                                        >
+                                        <div
++                                         className={"group p-6 border rounded-xl border-black/10 bg-white/70 backdro..."}
+-                                         className="group p-6 border rounded-xl border-black/10 bg-white/70 backdrop-..."
+                                        >
+                                        <div
++                                         className={"group p-6 border rounded-xl border-black/10 bg-white/70 backdro..."}
+-                                         className="group p-6 border rounded-xl border-black/10 bg-white/70 backdrop-..."
+                                        >
+                                        <div
++                                         className={"group p-6 border rounded-xl border-black/10 bg-white/70 backdro..."}
+-                                         className="group p-6 border rounded-xl border-black/10 bg-white/70 backdrop-..."
+                                        >
+                                        <div
++                                         className={"group p-6 border rounded-xl border-black/10 bg-white/70 backdro..."}
+-                                         className="group p-6 border rounded-xl border-black/10 bg-white/70 backdrop-..."
+                                        >
+                                <div
++                                 className="flex-1 w-full p-6 sm:p-10 md:p-15 flex items-center justify-center bg-white"
+-                                 className="jsx-c8095f7b9a3b8680 flex-1 w-full p-6 sm:p-10 md:p-15 flex items-center ..."
+                                >
+                                  <div
++                                   className="w-full max-w-130 animate-[fadeInUp_1s_ease-out_0.2s_both]"
+-                                   className="jsx-c8095f7b9a3b8680 w-full max-w-130 animate-[fadeInUp_1s_ease-out_0.2..."
+                                  >
+                                    <div
++                                     className="mb-10 text-center"
+-                                     className="jsx-c8095f7b9a3b8680 mb-10 text-center"
+                                    >
+                                      <h1
++                                       className={"font-['Cormorant_Garamond',serif] text-[36px] sm:text-[42px] font..."}
+-                                       className={"jsx-c8095f7b9a3b8680 font-['Cormorant_Garamond',serif] text-[36px..."}
+                                      >
++                                       Sign Up
+                                      <p
++                                       className="text-black/60 text-sm mt-4 font-light"
+-                                       className="jsx-c8095f7b9a3b8680 text-black/60 text-sm mt-4 font-light"
+                                      >
++                                       Enter your details to create an account
+                                    <form
+                                      onSubmit={function JewelFxRegistration[handleSubmit]}
++                                     className="flex flex-col gap-6"
+-                                     className="jsx-c8095f7b9a3b8680 flex flex-col gap-6"
+                                    >
+                                      <div
++                                       className="grid grid-cols-1 sm:grid-cols-2 gap-6"
+-                                       className="jsx-c8095f7b9a3b8680 grid grid-cols-1 sm:grid-cols-2 gap-6"
+                                      >
+                                        <div
++                                         className="flex flex-col gap-2"
+-                                         className="jsx-c8095f7b9a3b8680 flex flex-col gap-2"
+                                        >
+                                          <label
++                                           className="text-xs uppercase tracking-[1.5px] text-black/70"
+-                                           className="jsx-c8095f7b9a3b8680 text-xs uppercase tracking-[1.5px] text-bl..."
+                                          >
++                                           First Name
+                                          <input
+                                            type="text"
+                                            name="firstName"
+                                            value=""
+                                            onChange={function JewelFxRegistration[handleChange]}
+                                            placeholder="John"
+                                            required={true}
++                                           className="w-full bg-white border border-black/40 rounded-md px-3 py-3 tex..."
+-                                           className="jsx-c8095f7b9a3b8680 w-full bg-white border border-black/40 rou..."
+                                          >
+                                        <div
++                                         className="flex flex-col gap-2"
+-                                         className="jsx-c8095f7b9a3b8680 flex flex-col gap-2"
+                                        >
+                                          <label
++                                           className="text-xs uppercase tracking-[1.5px] text-black/70"
+-                                           className="jsx-c8095f7b9a3b8680 text-xs uppercase tracking-[1.5px] text-bl..."
+                                          >
++                                           Last Name
+                                          <input
+                                            type="text"
+                                            name="lastName"
+                                            value=""
+                                            onChange={function JewelFxRegistration[handleChange]}
+                                            placeholder="Doe"
+                                            required={true}
++                                           className="w-full bg-white border border-black/40 rounded-md px-3 py-3 tex..."
+-                                           className="jsx-c8095f7b9a3b8680 w-full bg-white border border-black/40 rou..."
+                                          >
+                                      <div
++                                       className="flex flex-col gap-2"
+-                                       className="jsx-c8095f7b9a3b8680 flex flex-col gap-2"
+                                      >
+                                        <label
++                                         className="text-xs uppercase tracking-[1.5px] text-black/70"
+-                                         className="jsx-c8095f7b9a3b8680 text-xs uppercase tracking-[1.5px] text-blac..."
+                                        >
++                                         Email
+                                        <input
+                                          type="email"
+                                          name="email"
+                                          value=""
+                                          onChange={function JewelFxRegistration[handleChange]}
+                                          placeholder="you@company.com"
+                                          required={true}
++                                         className="w-full bg-white border border-black/40 rounded-md px-3 py-3 text-..."
+-                                         className="jsx-c8095f7b9a3b8680 w-full bg-white border border-black/40 round..."
+                                        >
+                                      <div
++                                       className="flex flex-col gap-2"
+-                                       className="jsx-c8095f7b9a3b8680 flex flex-col gap-2"
+                                      >
+                                        <label
++                                         className="text-xs uppercase tracking-[1.5px] text-black/70"
+-                                         className="jsx-c8095f7b9a3b8680 text-xs uppercase tracking-[1.5px] text-blac..."
+                                        >
++                                         Phone (optional)
+                                        <div
++                                         className="flex items-center gap-3"
+-                                         className="jsx-c8095f7b9a3b8680 flex items-center gap-3"
+                                        >
+                                          <SelectCallingCode>
+                                          <input
+                                            type="tel"
+                                            name="phone"
+                                            value=""
+                                            onChange={function JewelFxRegistration[handleChange]}
+                                            placeholder="(555) 000-0000"
++                                           className="w-full bg-white border border-black/40 rounded-md px-3 py-3 tex..."
+-                                           className="jsx-c8095f7b9a3b8680 w-full bg-white border border-black/40 rou..."
+                                          >
+                                      <div
++                                       className="flex flex-col gap-2"
+-                                       className="jsx-c8095f7b9a3b8680 flex flex-col gap-2"
+                                      >
+                                        <label
++                                         className="text-xs uppercase tracking-[1.5px] text-black/70"
+-                                         className="jsx-c8095f7b9a3b8680 text-xs uppercase tracking-[1.5px] text-blac..."
+                                        >
++                                         Role
+                                        <select
+                                          name="role"
+                                          value=""
+                                          onChange={function JewelFxRegistration[handleChange]}
++                                         className={"w-full bg-white border border-black/40 rounded-md px-3 py-3 tex..."}
+-                                         className={"jsx-c8095f7b9a3b8680 w-full bg-white border border-black/40 rou..."}
+                                        >
+                                          <option
+                                            value=""
+-                                           className="jsx-c8095f7b9a3b8680"
+                                          >
++                                           Select role
+                                          <option
+                                            value="customer"
+-                                           className="jsx-c8095f7b9a3b8680"
+                                          >
++                                           Customer
+                                          <option
+                                            value="admin"
+-                                           className="jsx-c8095f7b9a3b8680"
+                                          >
++                                           Admin
+                                          <option
+                                            value="manager"
+-                                           className="jsx-c8095f7b9a3b8680"
+                                          >
++                                           Manager
+                                          <option
+                                            value="designer"
+-                                           className="jsx-c8095f7b9a3b8680"
+                                          >
++                                           Designer
+                                      <div
++                                       className="flex flex-col gap-2"
+-                                       className="jsx-c8095f7b9a3b8680 flex flex-col gap-2"
+                                      >
+                                        <label
++                                         className="text-xs uppercase tracking-[1.5px] text-black/70"
+-                                         className="jsx-c8095f7b9a3b8680 text-xs uppercase tracking-[1.5px] text-blac..."
+                                        >
++                                         Business Info (optional)
+                                        <textarea
+                                          name="businessInfo"
+                                          value=""
+                                          onChange={function JewelFxRegistration[handleChange]}
+                                          placeholder={"Business name, type, location, anything you'd like to share..."}
+                                          rows={3}
++                                         className="w-full bg-white border border-black/40 rounded-md px-3 py-3 text-..."
+-                                         className="jsx-c8095f7b9a3b8680 w-full bg-white border border-black/40 round..."
+                                        >
+                                      <div
++                                       className="grid grid-cols-1 sm:grid-cols-2 gap-6"
+-                                       className="jsx-c8095f7b9a3b8680 grid grid-cols-1 sm:grid-cols-2 gap-6"
+                                      >
+                                        <div
++                                         className="flex flex-col gap-2"
+-                                         className="jsx-c8095f7b9a3b8680 flex flex-col gap-2"
+                                        >
+                                          <label
++                                           className="text-xs uppercase tracking-[1.5px] text-black/70"
+-                                           className="jsx-c8095f7b9a3b8680 text-xs uppercase tracking-[1.5px] text-bl..."
+                                          >
++                                           Password
+                                          <div
++                                           className="relative"
+-                                           className="jsx-c8095f7b9a3b8680 relative"
+                                          >
+                                            <input
+                                              type="password"
+                                              name="password"
+                                              value=""
+                                              onChange={function JewelFxRegistration[handleChange]}
+                                              placeholder="Min. 8 characters"
+                                              required={true}
+                                              minLength={8}
++                                             className="w-full bg-white border border-black/40 rounded-md px-3 py-3 t..."
+-                                             className="jsx-c8095f7b9a3b8680 w-full bg-white border border-black/40 r..."
+                                            >
+                                            <button
+                                              type="button"
+                                              onClick={function JewelFxRegistration[<button>.onClick]}
++                                             className="absolute right-2 top-1/2 -translate-y-1/2 bg-transparent bord..."
+-                                             className="jsx-c8095f7b9a3b8680 absolute right-2 top-1/2 -translate-y-1/..."
+                                              aria-label="Toggle password visibility"
+                                            >
+                                        <div
++                                         className="flex flex-col gap-2"
+-                                         className="jsx-c8095f7b9a3b8680 flex flex-col gap-2"
+                                        >
+                                          <label
++                                           className="text-xs uppercase tracking-[1.5px] text-black/70"
+-                                           className="jsx-c8095f7b9a3b8680 text-xs uppercase tracking-[1.5px] text-bl..."
+                                          >
++                                           Confirm Password
+                                          <div
++                                           className="relative"
+-                                           className="jsx-c8095f7b9a3b8680 relative"
+                                          >
+                                            <input
+                                              type="password"
+                                              name="confirmPassword"
+                                              value=""
+                                              onChange={function JewelFxRegistration[handleChange]}
+                                              placeholder="Re-enter password"
+                                              required={true}
+                                              minLength={8}
++                                             className="w-full bg-white border border-black/40 rounded-md px-3 py-3 t..."
+-                                             className="jsx-c8095f7b9a3b8680 w-full bg-white border border-black/40 r..."
+                                            >
+                                            <button
+                                              type="button"
+                                              onClick={function JewelFxRegistration[<button>.onClick]}
++                                             className="absolute right-2 top-1/2 -translate-y-1/2 bg-transparent bord..."
+-                                             className="jsx-c8095f7b9a3b8680 absolute right-2 top-1/2 -translate-y-1/..."
+                                              aria-label="Toggle confirm password visibility"
+                                            >
+                                      <button
+                                        type="submit"
++                                       className="mt-1 px-8 py-4 bg-black text-white border border-black text-[13px] ..."
+-                                       className="jsx-c8095f7b9a3b8680 mt-1 px-8 py-4 bg-black text-white border bord..."
+                                      >
++                                       Create Account
+                                      <div
++                                       className="w-full h-px bg-black/10 my-6"
+-                                       className="jsx-c8095f7b9a3b8680 w-full h-px bg-black/10 my-6"
+                                      >
+                                      <div
++                                       className="text-center text-sm text-black/60"
+-                                       className="jsx-c8095f7b9a3b8680 text-center text-sm text-black/60"
+                                      >
+                              ...
+                      ...
+                    ...
+          ...
+
+[00:21:29.362] Server  LOG      ✓ Compiled in 17ms
+[00:21:49.867] Server  LOG      ✓ Compiled in 23ms
+[00:21:50.926] Browser ERROR   uncaughtError: ReferenceError: ThemeToggle is not defined
+[00:21:53.300] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:21:53.385] Server  LOG      ✓ Compiled in 53ms
+[00:21:53.567] Server  ERROR   Warning: [antd: Select] `dropdownMatchSelectWidth` is deprecated. Please use `popupMatchSelectWidth` instead.
+[00:21:53.568] Server  ERROR   Warning: [antd: Select] `dropdownStyle` is deprecated. Please use `styles.popup.root` instead.
+[00:21:53.638] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:21:53.926] Browser ERROR   Warning: [antd: Select] `dropdownMatchSelectWidth` is deprecated. Please use `popupMatchSelectWidth` instead.
+[00:21:53.926] Browser ERROR   Warning: [antd: Select] `dropdownStyle` is deprecated. Please use `styles.popup.root` instead.
+[00:21:53.926] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <RenderFromTemplateContext>
+      <ScrollAndFocusHandler segmentPath={[...]}>
+        <InnerScrollAndFocusHandler segmentPath={[...]} focusAndScrollRef={{apply:false, ...}}>
+          <ErrorBoundary errorComponent={undefined} errorStyles={undefined} errorScripts={undefined}>
+            <LoadingBoundary name="signup/" loading={null}>
+              <HTTPAccessFallbackBoundary notFound={undefined} forbidden={undefined} unauthorized={undefined}>
+                <RedirectBoundary>
+                  <RedirectErrorBoundary router={{...}}>
+                    <InnerLayoutRouter url="/auth/signup" tree={[...]} params={{}} cacheNode={{lazyData:null, ...}} ...>
+                      <SegmentViewNode type="page" pagePath="auth/signu...">
+                        <SegmentTrieNode>
+                        <ClientPageRoot Component={function JewelFxRegistration} serverProvidedParams={{...}}>
+                          <JewelFxRegistration params={Promise} searchParams={Promise}>
+                            <div
++                             className="min-h-screen bg-white text-black relative overflow-hidden"
+-                             className="jsx-c8095f7b9a3b8680 min-h-screen bg-white text-black relative overflow-hidden"
+                            >
+                              <div
++                               className="relative z-1 flex min-h-screen"
+-                               className="jsx-c8095f7b9a3b8680 relative z-1 flex min-h-screen"
+                              >
+                                <HeroAuth>
+                                  <div className="hidden md:...">
+                                    <div className="max-w-150 ...">
+                                      <div>
+                                      <div className="grid grid-...">
+                                        <div
++                                         className={"group p-6 border rounded-xl border-black/10 bg-white/70 backdro..."}
+-                                         className="group p-6 border rounded-xl border-black/10 bg-white/70 backdrop-..."
+                                        >
+                                        <div
++                                         className={"group p-6 border rounded-xl border-black/10 bg-white/70 backdro..."}
+-                                         className="group p-6 border rounded-xl border-black/10 bg-white/70 backdrop-..."
+                                        >
+                                        <div
++                                         className={"group p-6 border rounded-xl border-black/10 bg-white/70 backdro..."}
+-                                         className="group p-6 border rounded-xl border-black/10 bg-white/70 backdrop-..."
+                                        >
+                                        <div
++                                         className={"group p-6 border rounded-xl border-black/10 bg-white/70 backdro..."}
+-                                         className="group p-6 border rounded-xl border-black/10 bg-white/70 backdrop-..."
+                                        >
+                                        <div
++                                         className={"group p-6 border rounded-xl border-black/10 bg-white/70 backdro..."}
+-                                         className="group p-6 border rounded-xl border-black/10 bg-white/70 backdrop-..."
+                                        >
+                                        <div
++                                         className={"group p-6 border rounded-xl border-black/10 bg-white/70 backdro..."}
+-                                         className="group p-6 border rounded-xl border-black/10 bg-white/70 backdrop-..."
+                                        >
+                                <div
++                                 className="flex-1 w-full p-6 sm:p-10 md:p-15 flex items-center justify-center bg-white"
+-                                 className="jsx-c8095f7b9a3b8680 flex-1 w-full p-6 sm:p-10 md:p-15 flex items-center ..."
+                                >
+                                  <div
++                                   className="w-full max-w-130 animate-[fadeInUp_1s_ease-out_0.2s_both]"
+-                                   className="jsx-c8095f7b9a3b8680 w-full max-w-130 animate-[fadeInUp_1s_ease-out_0.2..."
+                                  >
+                                    <div
++                                     className="mb-10 text-center"
+-                                     className="jsx-c8095f7b9a3b8680 mb-10 text-center"
+                                    >
+                                      <h1
++                                       className={"font-['Cormorant_Garamond',serif] text-[36px] sm:text-[42px] font..."}
+-                                       className={"jsx-c8095f7b9a3b8680 font-['Cormorant_Garamond',serif] text-[36px..."}
+                                      >
++                                       Sign Up
+                                      <p
++                                       className="text-black/60 text-sm mt-4 font-light"
+-                                       className="jsx-c8095f7b9a3b8680 text-black/60 text-sm mt-4 font-light"
+                                      >
++                                       Enter your details to create an account
+                                    <form
+                                      onSubmit={function JewelFxRegistration[handleSubmit]}
++                                     className="flex flex-col gap-6"
+-                                     className="jsx-c8095f7b9a3b8680 flex flex-col gap-6"
+                                    >
+                                      <div
++                                       className="grid grid-cols-1 sm:grid-cols-2 gap-6"
+-                                       className="jsx-c8095f7b9a3b8680 grid grid-cols-1 sm:grid-cols-2 gap-6"
+                                      >
+                                        <div
++                                         className="flex flex-col gap-2"
+-                                         className="jsx-c8095f7b9a3b8680 flex flex-col gap-2"
+                                        >
+                                          <label
++                                           className="text-xs uppercase tracking-[1.5px] text-black/70"
+-                                           className="jsx-c8095f7b9a3b8680 text-xs uppercase tracking-[1.5px] text-bl..."
+                                          >
++                                           First Name
+                                          <input
+                                            type="text"
+                                            name="firstName"
+                                            value=""
+                                            onChange={function JewelFxRegistration[handleChange]}
+                                            placeholder="John"
+                                            required={true}
++                                           className="w-full bg-white border border-black/40 rounded-md px-3 py-3 tex..."
+-                                           className="jsx-c8095f7b9a3b8680 w-full bg-white border border-black/40 rou..."
+                                          >
+                                        <div
++                                         className="flex flex-col gap-2"
+-                                         className="jsx-c8095f7b9a3b8680 flex flex-col gap-2"
+                                        >
+                                          <label
++                                           className="text-xs uppercase tracking-[1.5px] text-black/70"
+-                                           className="jsx-c8095f7b9a3b8680 text-xs uppercase tracking-[1.5px] text-bl..."
+                                          >
++                                           Last Name
+                                          <input
+                                            type="text"
+                                            name="lastName"
+                                            value=""
+                                            onChange={function JewelFxRegistration[handleChange]}
+                                            placeholder="Doe"
+                                            required={true}
++                                           className="w-full bg-white border border-black/40 rounded-md px-3 py-3 tex..."
+-                                           className="jsx-c8095f7b9a3b8680 w-full bg-white border border-black/40 rou..."
+                                          >
+                                      <div
++                                       className="flex flex-col gap-2"
+-                                       className="jsx-c8095f7b9a3b8680 flex flex-col gap-2"
+                                      >
+                                        <label
++                                         className="text-xs uppercase tracking-[1.5px] text-black/70"
+-                                         className="jsx-c8095f7b9a3b8680 text-xs uppercase tracking-[1.5px] text-blac..."
+                                        >
++                                         Email
+                                        <input
+                                          type="email"
+                                          name="email"
+                                          value=""
+                                          onChange={function JewelFxRegistration[handleChange]}
+                                          placeholder="you@company.com"
+                                          required={true}
++                                         className="w-full bg-white border border-black/40 rounded-md px-3 py-3 text-..."
+-                                         className="jsx-c8095f7b9a3b8680 w-full bg-white border border-black/40 round..."
+                                        >
+                                      <div
++                                       className="flex flex-col gap-2"
+-                                       className="jsx-c8095f7b9a3b8680 flex flex-col gap-2"
+                                      >
+                                        <label
++                                         className="text-xs uppercase tracking-[1.5px] text-black/70"
+-                                         className="jsx-c8095f7b9a3b8680 text-xs uppercase tracking-[1.5px] text-blac..."
+                                        >
++                                         Phone (optional)
+                                        <div
++                                         className="flex items-center gap-3"
+-                                         className="jsx-c8095f7b9a3b8680 flex items-center gap-3"
+                                        >
+                                          <SelectCallingCode>
+                                          <input
+                                            type="tel"
+                                            name="phone"
+                                            value=""
+                                            onChange={function JewelFxRegistration[handleChange]}
+                                            placeholder="(555) 000-0000"
++                                           className="w-full bg-white border border-black/40 rounded-md px-3 py-3 tex..."
+-                                           className="jsx-c8095f7b9a3b8680 w-full bg-white border border-black/40 rou..."
+                                          >
+                                      <div
++                                       className="flex flex-col gap-2"
+-                                       className="jsx-c8095f7b9a3b8680 flex flex-col gap-2"
+                                      >
+                                        <label
++                                         className="text-xs uppercase tracking-[1.5px] text-black/70"
+-                                         className="jsx-c8095f7b9a3b8680 text-xs uppercase tracking-[1.5px] text-blac..."
+                                        >
++                                         Role
+                                        <select
+                                          name="role"
+                                          value=""
+                                          onChange={function JewelFxRegistration[handleChange]}
++                                         className={"w-full bg-white border border-black/40 rounded-md px-3 py-3 tex..."}
+-                                         className={"jsx-c8095f7b9a3b8680 w-full bg-white border border-black/40 rou..."}
+                                        >
+                                          <option
+                                            value=""
+-                                           className="jsx-c8095f7b9a3b8680"
+                                          >
++                                           Select role
+                                          <option
+                                            value="customer"
+-                                           className="jsx-c8095f7b9a3b8680"
+                                          >
++                                           Customer
+                                          <option
+                                            value="admin"
+-                                           className="jsx-c8095f7b9a3b8680"
+                                          >
++                                           Admin
+                                          <option
+                                            value="manager"
+-                                           className="jsx-c8095f7b9a3b8680"
+                                          >
++                                           Manager
+                                          <option
+                                            value="designer"
+-                                           className="jsx-c8095f7b9a3b8680"
+                                          >
++                                           Designer
+                                      <div
++                                       className="flex flex-col gap-2"
+-                                       className="jsx-c8095f7b9a3b8680 flex flex-col gap-2"
+                                      >
+                                        <label
++                                         className="text-xs uppercase tracking-[1.5px] text-black/70"
+-                                         className="jsx-c8095f7b9a3b8680 text-xs uppercase tracking-[1.5px] text-blac..."
+                                        >
++                                         Business Info (optional)
+                                        <textarea
+                                          name="businessInfo"
+                                          value=""
+                                          onChange={function JewelFxRegistration[handleChange]}
+                                          placeholder={"Business name, type, location, anything you'd like to share..."}
+                                          rows={3}
++                                         className="w-full bg-white border border-black/40 rounded-md px-3 py-3 text-..."
+-                                         className="jsx-c8095f7b9a3b8680 w-full bg-white border border-black/40 round..."
+                                        >
+                                      <div
++                                       className="grid grid-cols-1 sm:grid-cols-2 gap-6"
+-                                       className="jsx-c8095f7b9a3b8680 grid grid-cols-1 sm:grid-cols-2 gap-6"
+                                      >
+                                        <div
++                                         className="flex flex-col gap-2"
+-                                         className="jsx-c8095f7b9a3b8680 flex flex-col gap-2"
+                                        >
+                                          <label
++                                           className="text-xs uppercase tracking-[1.5px] text-black/70"
+-                                           className="jsx-c8095f7b9a3b8680 text-xs uppercase tracking-[1.5px] text-bl..."
+                                          >
++                                           Password
+                                          <div
++                                           className="relative"
+-                                           className="jsx-c8095f7b9a3b8680 relative"
+                                          >
+                                            <input
+                                              type="password"
+                                              name="password"
+                                              value=""
+                                              onChange={function JewelFxRegistration[handleChange]}
+                                              placeholder="Min. 8 characters"
+                                              required={true}
+                                              minLength={8}
++                                             className="w-full bg-white border border-black/40 rounded-md px-3 py-3 t..."
+-                                             className="jsx-c8095f7b9a3b8680 w-full bg-white border border-black/40 r..."
+                                            >
+                                            <button
+                                              type="button"
+                                              onClick={function JewelFxRegistration[<button>.onClick]}
++                                             className="absolute right-2 top-1/2 -translate-y-1/2 bg-transparent bord..."
+-                                             className="jsx-c8095f7b9a3b8680 absolute right-2 top-1/2 -translate-y-1/..."
+                                              aria-label="Toggle password visibility"
+                                            >
+                                        <div
++                                         className="flex flex-col gap-2"
+-                                         className="jsx-c8095f7b9a3b8680 flex flex-col gap-2"
+                                        >
+                                          <label
++                                           className="text-xs uppercase tracking-[1.5px] text-black/70"
+-                                           className="jsx-c8095f7b9a3b8680 text-xs uppercase tracking-[1.5px] text-bl..."
+                                          >
++                                           Confirm Password
+                                          <div
++                                           className="relative"
+-                                           className="jsx-c8095f7b9a3b8680 relative"
+                                          >
+                                            <input
+                                              type="password"
+                                              name="confirmPassword"
+                                              value=""
+                                              onChange={function JewelFxRegistration[handleChange]}
+                                              placeholder="Re-enter password"
+                                              required={true}
+                                              minLength={8}
++                                             className="w-full bg-white border border-black/40 rounded-md px-3 py-3 t..."
+-                                             className="jsx-c8095f7b9a3b8680 w-full bg-white border border-black/40 r..."
+                                            >
+                                            <button
+                                              type="button"
+                                              onClick={function JewelFxRegistration[<button>.onClick]}
++                                             className="absolute right-2 top-1/2 -translate-y-1/2 bg-transparent bord..."
+-                                             className="jsx-c8095f7b9a3b8680 absolute right-2 top-1/2 -translate-y-1/..."
+                                              aria-label="Toggle confirm password visibility"
+                                            >
+                                      <button
+                                        type="submit"
++                                       className="mt-1 px-8 py-4 bg-black text-white border border-black text-[13px] ..."
+-                                       className="jsx-c8095f7b9a3b8680 mt-1 px-8 py-4 bg-black text-white border bord..."
+                                      >
++                                       Create Account
+                                      <div
++                                       className="w-full h-px bg-black/10 my-6"
+-                                       className="jsx-c8095f7b9a3b8680 w-full h-px bg-black/10 my-6"
+                                      >
+                                      <div
++                                       className="text-center text-sm text-black/60"
+-                                       className="jsx-c8095f7b9a3b8680 text-center text-sm text-black/60"
+                                      >
+                              ...
+                      ...
+                    ...
+          ...
+
+[00:22:28.193] Server  LOG      ✓ Compiled in 28ms
+[00:23:04.916] Server  LOG      ✓ Compiled in 26ms
+[00:23:25.295] Server  LOG      ✓ Compiled in 25ms
+[00:23:32.207] Server  ERROR   Warning: [antd: Select] `dropdownMatchSelectWidth` is deprecated. Please use `popupMatchSelectWidth` instead.
+[00:23:32.208] Server  ERROR   Warning: [antd: Select] `dropdownStyle` is deprecated. Please use `styles.popup.root` instead.
+[00:23:32.296] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:23:32.539] Browser ERROR   Warning: [antd: Select] `dropdownMatchSelectWidth` is deprecated. Please use `popupMatchSelectWidth` instead.
+[00:23:32.539] Browser ERROR   Warning: [antd: Select] `dropdownStyle` is deprecated. Please use `styles.popup.root` instead.
+[00:23:32.539] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <RenderFromTemplateContext>
+      <ScrollAndFocusHandler segmentPath={[...]}>
+        <InnerScrollAndFocusHandler segmentPath={[...]} focusAndScrollRef={{apply:false, ...}}>
+          <ErrorBoundary errorComponent={undefined} errorStyles={undefined} errorScripts={undefined}>
+            <LoadingBoundary name="signup/" loading={null}>
+              <HTTPAccessFallbackBoundary notFound={undefined} forbidden={undefined} unauthorized={undefined}>
+                <RedirectBoundary>
+                  <RedirectErrorBoundary router={{...}}>
+                    <InnerLayoutRouter url="/auth/signup" tree={[...]} params={{}} cacheNode={{lazyData:null, ...}} ...>
+                      <SegmentViewNode type="page" pagePath="auth/signu...">
+                        <SegmentTrieNode>
+                        <ClientPageRoot Component={function JewelFxRegistration} serverProvidedParams={{...}}>
+                          <JewelFxRegistration params={Promise} searchParams={Promise}>
+                            <div
++                             className="min-h-screen bg-white text-black relative overflow-hidden"
+-                             className="jsx-c8095f7b9a3b8680 min-h-screen bg-white text-black relative overflow-hidden"
+                            >
+                              <div
++                               className="relative z-1 flex min-h-screen"
+-                               className="jsx-c8095f7b9a3b8680 relative z-1 flex min-h-screen"
+                              >
+                                <HeroAuth>
+                                  <div className="hidden md:...">
+                                    <div className="max-w-150 ...">
+                                      <div>
+                                      <div className="grid grid-...">
+                                        <div
++                                         className={"group p-6 border rounded-xl border-black/10 bg-white/70 backdro..."}
+-                                         className="group p-6 border rounded-xl border-black/10 bg-white/70 backdrop-..."
+                                        >
+                                        <div
++                                         className={"group p-6 border rounded-xl border-black/10 bg-white/70 backdro..."}
+-                                         className="group p-6 border rounded-xl border-black/10 bg-white/70 backdrop-..."
+                                        >
+                                        <div
++                                         className={"group p-6 border rounded-xl border-black/10 bg-white/70 backdro..."}
+-                                         className="group p-6 border rounded-xl border-black/10 bg-white/70 backdrop-..."
+                                        >
+                                        <div
++                                         className={"group p-6 border rounded-xl border-black/10 bg-white/70 backdro..."}
+-                                         className="group p-6 border rounded-xl border-black/10 bg-white/70 backdrop-..."
+                                        >
+                                        <div
++                                         className={"group p-6 border rounded-xl border-black/10 bg-white/70 backdro..."}
+-                                         className="group p-6 border rounded-xl border-black/10 bg-white/70 backdrop-..."
+                                        >
+                                        <div
++                                         className={"group p-6 border rounded-xl border-black/10 bg-white/70 backdro..."}
+-                                         className="group p-6 border rounded-xl border-black/10 bg-white/70 backdrop-..."
+                                        >
+                                <div
++                                 className="flex-1 w-full p-6 sm:p-10 md:p-15 flex items-center justify-center bg-white"
+-                                 className="jsx-c8095f7b9a3b8680 flex-1 w-full p-6 sm:p-10 md:p-15 flex items-center ..."
+                                >
+                                  <div
++                                   className="w-full max-w-130 animate-[fadeInUp_1s_ease-out_0.2s_both]"
+-                                   className="jsx-c8095f7b9a3b8680 w-full max-w-130 animate-[fadeInUp_1s_ease-out_0.2..."
+                                  >
+                                    <div
++                                     className="mb-10 text-center"
+-                                     className="jsx-c8095f7b9a3b8680 mb-10 text-center"
+                                    >
+                                      <h1
++                                       className={"font-['Cormorant_Garamond',serif] text-[36px] sm:text-[42px] font..."}
+-                                       className={"jsx-c8095f7b9a3b8680 font-['Cormorant_Garamond',serif] text-[36px..."}
+                                      >
++                                       Sign Up
+                                      <p
++                                       className="text-black/60 text-sm mt-4 font-light"
+-                                       className="jsx-c8095f7b9a3b8680 text-black/60 text-sm mt-4 font-light"
+                                      >
++                                       Enter your details to create an account
+                                    <form
+                                      onSubmit={function JewelFxRegistration[handleSubmit]}
++                                     className="flex flex-col gap-6"
+-                                     className="jsx-c8095f7b9a3b8680 flex flex-col gap-6"
+                                    >
+                                      <div
++                                       className="grid grid-cols-1 sm:grid-cols-2 gap-6"
+-                                       className="jsx-c8095f7b9a3b8680 grid grid-cols-1 sm:grid-cols-2 gap-6"
+                                      >
+                                        <div
++                                         className="flex flex-col gap-2"
+-                                         className="jsx-c8095f7b9a3b8680 flex flex-col gap-2"
+                                        >
+                                          <label
++                                           className="text-xs uppercase tracking-[1.5px] text-black/70"
+-                                           className="jsx-c8095f7b9a3b8680 text-xs uppercase tracking-[1.5px] text-bl..."
+                                          >
++                                           First Name
+                                          <input
+                                            type="text"
+                                            name="firstName"
+                                            value=""
+                                            onChange={function JewelFxRegistration[handleChange]}
+                                            placeholder="John"
+                                            required={true}
++                                           className="w-full bg-white border border-black/40 rounded-md px-3 py-3 tex..."
+-                                           className="jsx-c8095f7b9a3b8680 w-full bg-white border border-black/40 rou..."
+                                          >
+                                        <div
++                                         className="flex flex-col gap-2"
+-                                         className="jsx-c8095f7b9a3b8680 flex flex-col gap-2"
+                                        >
+                                          <label
++                                           className="text-xs uppercase tracking-[1.5px] text-black/70"
+-                                           className="jsx-c8095f7b9a3b8680 text-xs uppercase tracking-[1.5px] text-bl..."
+                                          >
++                                           Last Name
+                                          <input
+                                            type="text"
+                                            name="lastName"
+                                            value=""
+                                            onChange={function JewelFxRegistration[handleChange]}
+                                            placeholder="Doe"
+                                            required={true}
++                                           className="w-full bg-white border border-black/40 rounded-md px-3 py-3 tex..."
+-                                           className="jsx-c8095f7b9a3b8680 w-full bg-white border border-black/40 rou..."
+                                          >
+                                      <div
++                                       className="flex flex-col gap-2"
+-                                       className="jsx-c8095f7b9a3b8680 flex flex-col gap-2"
+                                      >
+                                        <label
++                                         className="text-xs uppercase tracking-[1.5px] text-black/70"
+-                                         className="jsx-c8095f7b9a3b8680 text-xs uppercase tracking-[1.5px] text-blac..."
+                                        >
++                                         Email
+                                        <input
+                                          type="email"
+                                          name="email"
+                                          value=""
+                                          onChange={function JewelFxRegistration[handleChange]}
+                                          placeholder="you@company.com"
+                                          required={true}
++                                         className="w-full bg-white border border-black/40 rounded-md px-3 py-3 text-..."
+-                                         className="jsx-c8095f7b9a3b8680 w-full bg-white border border-black/40 round..."
+                                        >
+                                      <div
++                                       className="flex flex-col gap-2"
+-                                       className="jsx-c8095f7b9a3b8680 flex flex-col gap-2"
+                                      >
+                                        <label
++                                         className="text-xs uppercase tracking-[1.5px] text-black/70"
+-                                         className="jsx-c8095f7b9a3b8680 text-xs uppercase tracking-[1.5px] text-blac..."
+                                        >
++                                         Phone (optional)
+                                        <div
++                                         className="flex items-center gap-3"
+-                                         className="jsx-c8095f7b9a3b8680 flex items-center gap-3"
+                                        >
+                                          <SelectCallingCode>
+                                          <input
+                                            type="tel"
+                                            name="phone"
+                                            value=""
+                                            onChange={function JewelFxRegistration[handleChange]}
+                                            placeholder="(555) 000-0000"
++                                           className="w-full bg-white border border-black/40 rounded-md px-3 py-3 tex..."
+-                                           className="jsx-c8095f7b9a3b8680 w-full bg-white border border-black/40 rou..."
+                                          >
+                                      <div
++                                       className="flex flex-col gap-2"
+-                                       className="jsx-c8095f7b9a3b8680 flex flex-col gap-2"
+                                      >
+                                        <label
++                                         className="text-xs uppercase tracking-[1.5px] text-black/70"
+-                                         className="jsx-c8095f7b9a3b8680 text-xs uppercase tracking-[1.5px] text-blac..."
+                                        >
++                                         Role
+                                        <select
+                                          name="role"
+                                          value=""
+                                          onChange={function JewelFxRegistration[handleChange]}
++                                         className={"w-full bg-white border border-black/40 rounded-md px-3 py-3 tex..."}
+-                                         className={"jsx-c8095f7b9a3b8680 w-full bg-white border border-black/40 rou..."}
+                                        >
+                                          <option
+                                            value=""
+-                                           className="jsx-c8095f7b9a3b8680"
+                                          >
++                                           Select role
+                                          <option
+                                            value="customer"
+-                                           className="jsx-c8095f7b9a3b8680"
+                                          >
++                                           Customer
+                                          <option
+                                            value="admin"
+-                                           className="jsx-c8095f7b9a3b8680"
+                                          >
++                                           Admin
+                                          <option
+                                            value="manager"
+-                                           className="jsx-c8095f7b9a3b8680"
+                                          >
++                                           Manager
+                                          <option
+                                            value="designer"
+-                                           className="jsx-c8095f7b9a3b8680"
+                                          >
++                                           Designer
+                                      <div
++                                       className="flex flex-col gap-2"
+-                                       className="jsx-c8095f7b9a3b8680 flex flex-col gap-2"
+                                      >
+                                        <label
++                                         className="text-xs uppercase tracking-[1.5px] text-black/70"
+-                                         className="jsx-c8095f7b9a3b8680 text-xs uppercase tracking-[1.5px] text-blac..."
+                                        >
++                                         Business Info (optional)
+                                        <textarea
+                                          name="businessInfo"
+                                          value=""
+                                          onChange={function JewelFxRegistration[handleChange]}
+                                          placeholder={"Business name, type, location, anything you'd like to share..."}
+                                          rows={3}
++                                         className="w-full bg-white border border-black/40 rounded-md px-3 py-3 text-..."
+-                                         className="jsx-c8095f7b9a3b8680 w-full bg-white border border-black/40 round..."
+                                        >
+                                      <div
++                                       className="grid grid-cols-1 sm:grid-cols-2 gap-6"
+-                                       className="jsx-c8095f7b9a3b8680 grid grid-cols-1 sm:grid-cols-2 gap-6"
+                                      >
+                                        <div
++                                         className="flex flex-col gap-2"
+-                                         className="jsx-c8095f7b9a3b8680 flex flex-col gap-2"
+                                        >
+                                          <label
++                                           className="text-xs uppercase tracking-[1.5px] text-black/70"
+-                                           className="jsx-c8095f7b9a3b8680 text-xs uppercase tracking-[1.5px] text-bl..."
+                                          >
++                                           Password
+                                          <div
++                                           className="relative"
+-                                           className="jsx-c8095f7b9a3b8680 relative"
+                                          >
+                                            <input
+                                              type="password"
+                                              name="password"
+                                              value=""
+                                              onChange={function JewelFxRegistration[handleChange]}
+                                              placeholder="Min. 8 characters"
+                                              required={true}
+                                              minLength={8}
++                                             className="w-full bg-white border border-black/40 rounded-md px-3 py-3 t..."
+-                                             className="jsx-c8095f7b9a3b8680 w-full bg-white border border-black/40 r..."
+                                            >
+                                            <button
+                                              type="button"
+                                              onClick={function JewelFxRegistration[<button>.onClick]}
++                                             className="absolute right-2 top-1/2 -translate-y-1/2 bg-transparent bord..."
+-                                             className="jsx-c8095f7b9a3b8680 absolute right-2 top-1/2 -translate-y-1/..."
+                                              aria-label="Toggle password visibility"
+                                            >
+                                        <div
++                                         className="flex flex-col gap-2"
+-                                         className="jsx-c8095f7b9a3b8680 flex flex-col gap-2"
+                                        >
+                                          <label
++                                           className="text-xs uppercase tracking-[1.5px] text-black/70"
+-                                           className="jsx-c8095f7b9a3b8680 text-xs uppercase tracking-[1.5px] text-bl..."
+                                          >
++                                           Confirm Password
+                                          <div
++                                           className="relative"
+-                                           className="jsx-c8095f7b9a3b8680 relative"
+                                          >
+                                            <input
+                                              type="password"
+                                              name="confirmPassword"
+                                              value=""
+                                              onChange={function JewelFxRegistration[handleChange]}
+                                              placeholder="Re-enter password"
+                                              required={true}
+                                              minLength={8}
++                                             className="w-full bg-white border border-black/40 rounded-md px-3 py-3 t..."
+-                                             className="jsx-c8095f7b9a3b8680 w-full bg-white border border-black/40 r..."
+                                            >
+                                            <button
+                                              type="button"
+                                              onClick={function JewelFxRegistration[<button>.onClick]}
++                                             className="absolute right-2 top-1/2 -translate-y-1/2 bg-transparent bord..."
+-                                             className="jsx-c8095f7b9a3b8680 absolute right-2 top-1/2 -translate-y-1/..."
+                                              aria-label="Toggle confirm password visibility"
+                                            >
+                                      <button
+                                        type="submit"
++                                       className="mt-1 px-8 py-4 bg-black text-white border border-black text-[13px] ..."
+-                                       className="jsx-c8095f7b9a3b8680 mt-1 px-8 py-4 bg-black text-white border bord..."
+                                      >
++                                       Create Account
+                                      <div
++                                       className="w-full h-px bg-black/10 my-6"
+-                                       className="jsx-c8095f7b9a3b8680 w-full h-px bg-black/10 my-6"
+                                      >
+                                      <div
++                                       className="text-center text-sm text-black/60"
+-                                       className="jsx-c8095f7b9a3b8680 text-center text-sm text-black/60"
+                                      >
+                              ...
+                      ...
+                    ...
+          ...
+
+[00:28:56.341] Server  LOG      ✓ Compiled in 67ms
+[00:30:42.280] Server  LOG      ✓ Compiled in 32ms
+[00:31:01.505] Server  LOG      ✓ Compiled in 30ms
+[00:31:07.399] Server  LOG      ✓ Compiled in 47ms
+[00:31:14.864] Server  LOG      ✓ Compiled in 31ms
+[00:35:37.695] Server  LOG      ✓ Compiled in 116ms
+[00:35:47.232] Server  ERROR   Warning: [antd: Select] `dropdownMatchSelectWidth` is deprecated. Please use `popupMatchSelectWidth` instead.
+[00:35:47.233] Server  ERROR   Warning: [antd: Select] `dropdownStyle` is deprecated. Please use `styles.popup.root` instead.
+[00:35:47.374] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:35:47.628] Browser ERROR   Warning: [antd: Select] `dropdownMatchSelectWidth` is deprecated. Please use `popupMatchSelectWidth` instead.
+[00:35:47.628] Browser ERROR   Warning: [antd: Select] `dropdownStyle` is deprecated. Please use `styles.popup.root` instead.
+[00:35:47.628] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <RenderFromTemplateContext>
+      <ScrollAndFocusHandler segmentPath={[...]}>
+        <InnerScrollAndFocusHandler segmentPath={[...]} focusAndScrollRef={{apply:false, ...}}>
+          <ErrorBoundary errorComponent={undefined} errorStyles={undefined} errorScripts={undefined}>
+            <LoadingBoundary name="signup/" loading={null}>
+              <HTTPAccessFallbackBoundary notFound={undefined} forbidden={undefined} unauthorized={undefined}>
+                <RedirectBoundary>
+                  <RedirectErrorBoundary router={{...}}>
+                    <InnerLayoutRouter url="/auth/signup" tree={[...]} params={{}} cacheNode={{lazyData:null, ...}} ...>
+                      <SegmentViewNode type="page" pagePath="auth/signu...">
+                        <SegmentTrieNode>
+                        <ClientPageRoot Component={function JewelFxRegistration} serverProvidedParams={{...}}>
+                          <JewelFxRegistration params={Promise} searchParams={Promise}>
+                            <div
++                             className="min-h-screen bg-white text-black relative overflow-hidden"
+-                             className="jsx-c8095f7b9a3b8680 min-h-screen bg-white text-black relative overflow-hidden"
+                            >
+                              <div
++                               className="relative z-1 flex min-h-screen"
+-                               className="jsx-c8095f7b9a3b8680 relative z-1 flex min-h-screen"
+                              >
+                                <HeroAuth>
+                                  <div className="hidden md:...">
+                                    <div className="max-w-150 ...">
+                                      <div>
+                                      <div className="grid grid-...">
+                                        <div
++                                         className={"group p-6 border rounded-xl border-black/10 bg-white/70 backdro..."}
+-                                         className="group p-6 border rounded-xl border-black/10 bg-white/70 backdrop-..."
+                                        >
+                                        <div
++                                         className={"group p-6 border rounded-xl border-black/10 bg-white/70 backdro..."}
+-                                         className="group p-6 border rounded-xl border-black/10 bg-white/70 backdrop-..."
+                                        >
+                                        <div
++                                         className={"group p-6 border rounded-xl border-black/10 bg-white/70 backdro..."}
+-                                         className="group p-6 border rounded-xl border-black/10 bg-white/70 backdrop-..."
+                                        >
+                                        <div
++                                         className={"group p-6 border rounded-xl border-black/10 bg-white/70 backdro..."}
+-                                         className="group p-6 border rounded-xl border-black/10 bg-white/70 backdrop-..."
+                                        >
+                                        <div
++                                         className={"group p-6 border rounded-xl border-black/10 bg-white/70 backdro..."}
+-                                         className="group p-6 border rounded-xl border-black/10 bg-white/70 backdrop-..."
+                                        >
+                                        <div
++                                         className={"group p-6 border rounded-xl border-black/10 bg-white/70 backdro..."}
+-                                         className="group p-6 border rounded-xl border-black/10 bg-white/70 backdrop-..."
+                                        >
+                                <div
++                                 className="flex-1 w-full p-6 sm:p-10 md:p-15 flex items-center justify-center bg-white"
+-                                 className="jsx-c8095f7b9a3b8680 flex-1 w-full p-6 sm:p-10 md:p-15 flex items-center ..."
+                                >
+                                  <div
++                                   className="w-full max-w-130 animate-[fadeInUp_1s_ease-out_0.2s_both]"
+-                                   className="jsx-c8095f7b9a3b8680 w-full max-w-130 animate-[fadeInUp_1s_ease-out_0.2..."
+                                  >
+                                    <div
++                                     className="mb-10 text-center"
+-                                     className="jsx-c8095f7b9a3b8680 mb-10 text-center"
+                                    >
+                                      <h1
++                                       className={"font-['Cormorant_Garamond',serif] text-[36px] sm:text-[42px] font..."}
+-                                       className={"jsx-c8095f7b9a3b8680 font-['Cormorant_Garamond',serif] text-[36px..."}
+                                      >
++                                       Sign Up
+                                      <p
++                                       className="text-black/60 text-sm mt-4 font-light"
+-                                       className="jsx-c8095f7b9a3b8680 text-black/60 text-sm mt-4 font-light"
+                                      >
++                                       Enter your details to create an account
+                                    <form
+                                      onSubmit={function JewelFxRegistration[handleSubmit]}
++                                     className="flex flex-col gap-6"
+-                                     className="jsx-c8095f7b9a3b8680 flex flex-col gap-6"
+                                    >
+                                      <div
++                                       className="grid grid-cols-1 sm:grid-cols-2 gap-6"
+-                                       className="jsx-c8095f7b9a3b8680 grid grid-cols-1 sm:grid-cols-2 gap-6"
+                                      >
+                                        <div
++                                         className="flex flex-col gap-2"
+-                                         className="jsx-c8095f7b9a3b8680 flex flex-col gap-2"
+                                        >
+                                          <label
++                                           className="text-xs uppercase tracking-[1.5px] text-black/70"
+-                                           className="jsx-c8095f7b9a3b8680 text-xs uppercase tracking-[1.5px] text-bl..."
+                                          >
++                                           First Name
+                                          <input
+                                            type="text"
+                                            name="firstName"
+                                            value=""
+                                            onChange={function JewelFxRegistration[handleChange]}
+                                            placeholder="John"
+                                            required={true}
++                                           className="w-full bg-white border border-black/40 rounded-md px-3 py-3 tex..."
+-                                           className="jsx-c8095f7b9a3b8680 w-full bg-white border border-black/40 rou..."
+                                          >
+                                        <div
++                                         className="flex flex-col gap-2"
+-                                         className="jsx-c8095f7b9a3b8680 flex flex-col gap-2"
+                                        >
+                                          <label
++                                           className="text-xs uppercase tracking-[1.5px] text-black/70"
+-                                           className="jsx-c8095f7b9a3b8680 text-xs uppercase tracking-[1.5px] text-bl..."
+                                          >
++                                           Last Name
+                                          <input
+                                            type="text"
+                                            name="lastName"
+                                            value=""
+                                            onChange={function JewelFxRegistration[handleChange]}
+                                            placeholder="Doe"
+                                            required={true}
++                                           className="w-full bg-white border border-black/40 rounded-md px-3 py-3 tex..."
+-                                           className="jsx-c8095f7b9a3b8680 w-full bg-white border border-black/40 rou..."
+                                          >
+                                      <div
++                                       className="flex flex-col gap-2"
+-                                       className="jsx-c8095f7b9a3b8680 flex flex-col gap-2"
+                                      >
+                                        <label
++                                         className="text-xs uppercase tracking-[1.5px] text-black/70"
+-                                         className="jsx-c8095f7b9a3b8680 text-xs uppercase tracking-[1.5px] text-blac..."
+                                        >
++                                         Email
+                                        <input
+                                          type="email"
+                                          name="email"
+                                          value=""
+                                          onChange={function JewelFxRegistration[handleChange]}
+                                          placeholder="you@company.com"
+                                          required={true}
++                                         className="w-full bg-white border border-black/40 rounded-md px-3 py-3 text-..."
+-                                         className="jsx-c8095f7b9a3b8680 w-full bg-white border border-black/40 round..."
+                                        >
+                                      <div
++                                       className="flex flex-col gap-2"
+-                                       className="jsx-c8095f7b9a3b8680 flex flex-col gap-2"
+                                      >
+                                        <label
++                                         className="text-xs uppercase tracking-[1.5px] text-black/70"
+-                                         className="jsx-c8095f7b9a3b8680 text-xs uppercase tracking-[1.5px] text-blac..."
+                                        >
++                                         Phone (optional)
+                                        <div
++                                         className="flex items-center gap-3"
+-                                         className="jsx-c8095f7b9a3b8680 flex items-center gap-3"
+                                        >
+                                          <SelectCallingCode>
+                                          <input
+                                            type="tel"
+                                            name="phone"
+                                            value=""
+                                            onChange={function JewelFxRegistration[handleChange]}
+                                            placeholder="(555) 000-0000"
++                                           className="w-full bg-white border border-black/40 rounded-md px-3 py-3 tex..."
+-                                           className="jsx-c8095f7b9a3b8680 w-full bg-white border border-black/40 rou..."
+                                          >
+                                      <div
++                                       className="flex flex-col gap-2"
+-                                       className="jsx-c8095f7b9a3b8680 flex flex-col gap-2"
+                                      >
+                                        <label
++                                         className="text-xs uppercase tracking-[1.5px] text-black/70"
+-                                         className="jsx-c8095f7b9a3b8680 text-xs uppercase tracking-[1.5px] text-blac..."
+                                        >
++                                         Role
+                                        <select
+                                          name="role"
+                                          value=""
+                                          onChange={function JewelFxRegistration[handleChange]}
++                                         className={"w-full bg-white border border-black/40 rounded-md px-3 py-3 tex..."}
+-                                         className={"jsx-c8095f7b9a3b8680 w-full bg-white border border-black/40 rou..."}
+                                        >
+                                          <option
+                                            value=""
+-                                           className="jsx-c8095f7b9a3b8680"
+                                          >
++                                           Select role
+                                          <option
+                                            value="customer"
+-                                           className="jsx-c8095f7b9a3b8680"
+                                          >
++                                           Customer
+                                          <option
+                                            value="admin"
+-                                           className="jsx-c8095f7b9a3b8680"
+                                          >
++                                           Admin
+                                          <option
+                                            value="manager"
+-                                           className="jsx-c8095f7b9a3b8680"
+                                          >
++                                           Manager
+                                          <option
+                                            value="designer"
+-                                           className="jsx-c8095f7b9a3b8680"
+                                          >
++                                           Designer
+                                      <div
++                                       className="flex flex-col gap-2"
+-                                       className="jsx-c8095f7b9a3b8680 flex flex-col gap-2"
+                                      >
+                                        <label
++                                         className="text-xs uppercase tracking-[1.5px] text-black/70"
+-                                         className="jsx-c8095f7b9a3b8680 text-xs uppercase tracking-[1.5px] text-blac..."
+                                        >
++                                         Business Info (optional)
+                                        <textarea
+                                          name="businessInfo"
+                                          value=""
+                                          onChange={function JewelFxRegistration[handleChange]}
+                                          placeholder={"Business name, type, location, anything you'd like to share..."}
+                                          rows={3}
++                                         className="w-full bg-white border border-black/40 rounded-md px-3 py-3 text-..."
+-                                         className="jsx-c8095f7b9a3b8680 w-full bg-white border border-black/40 round..."
+                                        >
+                                      <div
++                                       className="grid grid-cols-1 sm:grid-cols-2 gap-6"
+-                                       className="jsx-c8095f7b9a3b8680 grid grid-cols-1 sm:grid-cols-2 gap-6"
+                                      >
+                                        <div
++                                         className="flex flex-col gap-2"
+-                                         className="jsx-c8095f7b9a3b8680 flex flex-col gap-2"
+                                        >
+                                          <label
++                                           className="text-xs uppercase tracking-[1.5px] text-black/70"
+-                                           className="jsx-c8095f7b9a3b8680 text-xs uppercase tracking-[1.5px] text-bl..."
+                                          >
++                                           Password
+                                          <div
++                                           className="relative"
+-                                           className="jsx-c8095f7b9a3b8680 relative"
+                                          >
+                                            <input
+                                              type="password"
+                                              name="password"
+                                              value=""
+                                              onChange={function JewelFxRegistration[handleChange]}
+                                              placeholder="Min. 8 characters"
+                                              required={true}
+                                              minLength={8}
++                                             className="w-full bg-white border border-black/40 rounded-md px-3 py-3 t..."
+-                                             className="jsx-c8095f7b9a3b8680 w-full bg-white border border-black/40 r..."
+                                            >
+                                            <button
+                                              type="button"
+                                              onClick={function JewelFxRegistration[<button>.onClick]}
++                                             className="absolute right-2 top-1/2 -translate-y-1/2 bg-transparent bord..."
+-                                             className="jsx-c8095f7b9a3b8680 absolute right-2 top-1/2 -translate-y-1/..."
+                                              aria-label="Toggle password visibility"
+                                            >
+                                        <div
++                                         className="flex flex-col gap-2"
+-                                         className="jsx-c8095f7b9a3b8680 flex flex-col gap-2"
+                                        >
+                                          <label
++                                           className="text-xs uppercase tracking-[1.5px] text-black/70"
+-                                           className="jsx-c8095f7b9a3b8680 text-xs uppercase tracking-[1.5px] text-bl..."
+                                          >
++                                           Confirm Password
+                                          <div
++                                           className="relative"
+-                                           className="jsx-c8095f7b9a3b8680 relative"
+                                          >
+                                            <input
+                                              type="password"
+                                              name="confirmPassword"
+                                              value=""
+                                              onChange={function JewelFxRegistration[handleChange]}
+                                              placeholder="Re-enter password"
+                                              required={true}
+                                              minLength={8}
++                                             className="w-full bg-white border border-black/40 rounded-md px-3 py-3 t..."
+-                                             className="jsx-c8095f7b9a3b8680 w-full bg-white border border-black/40 r..."
+                                            >
+                                            <button
+                                              type="button"
+                                              onClick={function JewelFxRegistration[<button>.onClick]}
++                                             className="absolute right-2 top-1/2 -translate-y-1/2 bg-transparent bord..."
+-                                             className="jsx-c8095f7b9a3b8680 absolute right-2 top-1/2 -translate-y-1/..."
+                                              aria-label="Toggle confirm password visibility"
+                                            >
+                                      <button
+                                        type="submit"
++                                       className="mt-1 px-8 py-4 bg-black text-white border border-black text-[13px] ..."
+-                                       className="jsx-c8095f7b9a3b8680 mt-1 px-8 py-4 bg-black text-white border bord..."
+                                      >
++                                       Create Account
+                                      <div
++                                       className="w-full h-px bg-black/10 my-6"
+-                                       className="jsx-c8095f7b9a3b8680 w-full h-px bg-black/10 my-6"
+                                      >
+                                      <div
++                                       className="text-center text-sm text-black/60"
+-                                       className="jsx-c8095f7b9a3b8680 text-center text-sm text-black/60"
+                                      >
+                              ...
+                      ...
+                    ...
+          ...
+
+[00:37:40.631] Server  LOG      ✓ Compiled in 105ms
+[00:38:13.931] Server  LOG      ✓ Compiled in 31ms
+[00:38:48.795] Server  LOG      ✓ Compiled in 36ms
+[00:38:53.920] Server  LOG      ✓ Compiled in 38ms
+[01:16:43.410] Server  LOG      ✓ Compiled in 85ms
+[01:18:20.860] Server  LOG      ✓ Compiled in 68ms
+[01:19:54.781] Server  LOG      ✓ Compiled in 50ms
+[01:20:57.866] Server  LOG      ✓ Compiled in 65ms
+[01:21:38.955] Server  LOG      ✓ Compiled in 42ms
+[01:21:50.978] Server  LOG      ✓ Compiled in 43ms
+[01:22:13.802] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[01:23:07.831] Server  LOG      ✓ Compiled in 159ms
+[01:23:07.887] Server  LOG      ✓ Compiled in 0ms
+[01:23:36.815] Server  LOG      ✓ Compiled in 33ms
+[01:23:39.542] Server  LOG      ✓ Compiled in 16ms
+[01:23:44.099] Server  LOG      ✓ Compiled in 21ms
+[01:23:46.598] Server  LOG      ✓ Compiled in 14ms
+[01:23:57.035] Server  LOG      ✓ Compiled in 20ms
+[01:24:01.502] Server  LOG      ✓ Compiled in 29ms
+[01:24:20.522] Server  LOG      ✓ Compiled in 34ms
+[01:24:22.844] Server  LOG      ✓ Compiled in 64ms
+[01:24:32.779] Server  LOG      ✓ Compiled in 55ms
+[01:24:33.328] Browser ERROR   uncaughtError: ReferenceError: ThemeToggle is not defined
+[01:24:35.983] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:24:36.068] Server  LOG      ✓ Compiled in 35ms
+[01:24:36.199] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:25:03.932] Server  LOG      ✓ Compiled in 27ms
+[01:25:30.327] Server  LOG      ✓ Compiled in 11ms
+[01:25:58.428] Server  LOG      ✓ Compiled in 25ms
+[01:26:09.608] Server  LOG      ✓ Compiled in 45ms
+[01:26:20.293] Server  LOG      ✓ Compiled in 13ms
+[01:26:32.171] Server  LOG      ✓ Compiled in 27ms
+[01:26:42.161] Server  LOG      ✓ Compiled in 25ms
+[01:26:45.594] Server  LOG      ✓ Compiled in 22ms
+[01:28:58.931] Server  LOG      ✓ Compiled in 69ms
+[01:29:02.990] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:29:29.431] Browser ERROR   Warning: [antd: Select] `dropdownMatchSelectWidth` is deprecated. Please use `popupMatchSelectWidth` instead.
+[01:29:29.431] Browser ERROR   Warning: [antd: Select] `dropdownStyle` is deprecated. Please use `styles.popup.root` instead.
+[01:29:29.431] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[01:30:01.261] Server  LOG      ✓ Compiled in 21ms
+[01:30:08.958] Server  LOG      ✓ Compiled in 26ms
+[01:32:28.732] Server  LOG      ✓ Compiled in 60ms
+[01:33:02.472] Server  LOG      ✓ Compiled in 20ms
+[01:37:47.118] Server  LOG      ✓ Compiled in 82ms
+[01:40:08.181] Server  LOG      ✓ Compiled in 59ms
+[01:40:08.328] Browser ERROR   ./src/app/auth/signup/page.tsx:30:7
+Parsing ecmascript source code failed
+  28 |   const handleChange = (
+  29 |     e: React.ChangeEvent
+> 30 |       HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+     |       ^^^^^^^^^^^^^^^^
+  31 |     >
+  32 |   ) => {
+  33 |     const { name, value } = e.target;
+
+Expected ',', got 'HTMLInputElement'
+
+Import traces:
+  Client Component Browser:
+    ./src/app/auth/signup/page.tsx [Client Component Browser]
+    ./src/app/auth/signup/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/auth/signup/page.tsx [Client Component SSR]
+    ./src/app/auth/signup/page.tsx [Server Component]
+[01:40:26.328] Browser ERROR   ./src/app/auth/signup/page.tsx:29:7
+Parsing ecmascript source code failed
+  27 |   const handleChange = (
+  28 |     e: React.ChangeEvent
+> 29 |       HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+     |       ^^^^^^^^^^^^^^^^
+  30 |     >
+  31 |   ) => {
+  32 |     const { name, value } = e.target;
+
+Expected ',', got 'HTMLInputElement'
+
+Import traces:
+  Client Component Browser:
+    ./src/app/auth/signup/page.tsx [Client Component Browser]
+    ./src/app/auth/signup/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/auth/signup/page.tsx [Client Component SSR]
+    ./src/app/auth/signup/page.tsx [Server Component]
+[01:41:54.380] Server  LOG      ✓ Compiled in 134ms
+[01:42:18.711] Server  LOG      ✓ Compiled in 38ms
+[01:43:02.870] Server  LOG      ✓ Compiled in 97ms
+[01:50:36.789] Server  LOG      ✓ Compiled in 83ms
+[01:50:47.415] Server  LOG      ✓ Compiled in 76ms
+[01:53:12.109] Server  LOG      ✓ Compiled in 29ms

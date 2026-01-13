@@ -15,11 +15,11 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$ne
 ;
 function JewelFxLandingPage() {
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_babel$2d$plugin$2d$react$2d$compiler$40$1$2e$0$2e$0_react$2d$dom$40$19$2e$2$2e$1_react$40$19$2e$2$2e$1_$5f$react$40$19$2e$2$2e$1$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(22);
-    if ($[0] !== "cbad4d3803871f3ae64b4e4fcbef5c83e5bba77d6ace0d299f359df79417dfc1") {
+    if ($[0] !== "c489d7203d31780f01e59fb8184789e24731dcc0d154370f1bc38a7cb5e9527f") {
         for(let $i = 0; $i < 22; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "cbad4d3803871f3ae64b4e4fcbef5c83e5bba77d6ace0d299f359df79417dfc1";
+        $[0] = "c489d7203d31780f01e59fb8184789e24731dcc0d154370f1bc38a7cb5e9527f";
     }
     let t0;
     if ($[1] === Symbol.for("react.memo_cache_sentinel")) {
@@ -186,6 +186,11 @@ function JewelFxLandingPage() {
                                 fileName: "[project]/src/app/page.tsx",
                                 lineNumber: 112,
                                 columnNumber: 538
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_babel$2d$plugin$2d$react$2d$compiler$40$1$2e$0$2e$0_react$2d$dom$40$19$2e$2$2e$1_react$40$19$2e$2$2e$1_$5f$react$40$19$2e$2$2e$1$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(ThemeToggle, {}, void 0, false, {
+                                fileName: "[project]/src/app/page.tsx",
+                                lineNumber: 112,
+                                columnNumber: 706
                             }, this)
                         ]
                     }, void 0, true, {

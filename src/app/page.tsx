@@ -1,5 +1,6 @@
 "use client";
 
+import ThemeToggle from "@/components/common/ThemeToggle";
 import Link from "next/link";
 
 type Service = {
@@ -114,35 +115,48 @@ export default function JewelFxLandingPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-white text-black">
+    <div className="min-h-screen bg-white dark:bg-black text-black dark:text-white transition-colors">
       {/* Top Nav */}
-      <header className="sticky top-0 z-50 bg-white/80 backdrop-blur border-b border-black/10">
+      <header className="sticky top-0 z-50 bg-white/80 dark:bg-black/80 backdrop-blur border-b border-black/10 dark:border-white/10 transition-colors">
         <div className="mx-auto max-w-6xl px-6 py-4 flex items-center justify-between">
           <div className="font-['Cormorant_Garamond',serif] text-2xl tracking-wide">
             JewelFx
           </div>
 
           <div className="flex items-center gap-4">
-            <nav className="hidden md:flex items-center gap-6 text-sm text-black/70">
-              <a href="#services" className="hover:text-black">
+            <nav className="hidden md:flex items-center gap-6 text-sm text-black/70 dark:text-white/70">
+              <a
+                href="#services"
+                className="hover:text-black dark:hover:text-white transition-colors"
+              >
                 Services
               </a>
-              <a href="#process" className="hover:text-black">
+              <a
+                href="#process"
+                className="hover:text-black dark:hover:text-white transition-colors"
+              >
                 Process
               </a>
-              <a href="#work" className="hover:text-black">
+              <a
+                href="#work"
+                className="hover:text-black dark:hover:text-white transition-colors"
+              >
                 Work
               </a>
-              <a href="#resources" className="hover:text-black">
+              <a
+                href="#resources"
+                className="hover:text-black dark:hover:text-white transition-colors"
+              >
                 Dashboard
               </a>
             </nav>
             <Link
               href="/auth/signup"
-              className="px-4 py-2 rounded-md border border-black bg-black text-white text-sm hover:bg-white hover:text-black transition"
+              className="px-4 py-2 rounded-md border border-black dark:border-white bg-black dark:bg-white text-white dark:text-black text-sm hover:bg-white dark:hover:bg-black hover:text-black dark:hover:text-white transition"
             >
               Get Started
             </Link>
+            <ThemeToggle />
           </div>
         </div>
       </header>
@@ -154,12 +168,12 @@ export default function JewelFxLandingPage() {
             <div>
               <h1 className="font-['Cormorant_Garamond',serif] text-4xl md:text-6xl leading-tight">
                 Transform jewelry ideas into{" "}
-                <span className="underline underline-offset-8 decoration-black/30">
+                <span className="underline underline-offset-8 decoration-black/30 dark:decoration-white/30">
                   digital masterpieces
                 </span>
                 .
               </h1>
-              <p className="mt-5 text-black/70 leading-relaxed max-w-xl">
+              <p className="mt-5 text-black/70 dark:text-white/70 leading-relaxed max-w-xl transition-colors">
                 We help jewelry brands, retailers, and manufacturers with CAD
                 design, photorealistic renders, and animations — plus ecommerce
                 website development to sell online faster.
@@ -173,23 +187,27 @@ export default function JewelFxLandingPage() {
                 ].map((item, idx) => (
                   <div
                     key={idx}
-                    className="p-4 rounded-xl border border-black/10 bg-black/2"
+                    className="p-4 rounded-xl border border-black/10 dark:border-white/10 bg-black/2 dark:bg-white/5 transition-colors"
                   >
                     <div className="text-sm font-semibold">{item.k}</div>
-                    <div className="text-xs text-black/60 mt-1">{item.v}</div>
+                    <div className="text-xs text-black/60 dark:text-white/60 mt-1 transition-colors">
+                      {item.v}
+                    </div>
                   </div>
                 ))}
               </div>
             </div>
 
-            {/* Right visual block (simple, black/white) */}
+            {/* Right visual block */}
             <div className="relative">
-              <div className="rounded-2xl border border-black/10 bg-linear-to-br from-white to-black/3 p-8">
+              <div className="rounded-2xl border border-black/10 dark:border-white/10 bg-gradient-to-br from-white to-black/3 dark:from-black dark:to-white/5 p-8 transition-colors">
                 <div className="flex items-center justify-between">
-                  <div className="text-sm uppercase tracking-[2px] text-black/60">
+                  <div className="text-sm uppercase tracking-[2px] text-black/60 dark:text-white/60 transition-colors">
                     Sample Deliverables
                   </div>
-                  <div className="text-xs text-black/50">Preview</div>
+                  <div className="text-xs text-black/50 dark:text-white/50 transition-colors">
+                    Preview
+                  </div>
                 </div>
 
                 <div className="mt-6 grid grid-cols-2 gap-4">
@@ -201,44 +219,47 @@ export default function JewelFxLandingPage() {
                   ].map((t, i) => (
                     <div
                       key={i}
-                      className="h-28 rounded-xl border border-black/10 bg-white flex items-center justify-center text-sm text-black/60"
+                      className="h-28 rounded-xl border border-black/10 dark:border-white/10 bg-white dark:bg-white/5 flex items-center justify-center text-sm text-black/60 dark:text-white/60 transition-colors"
                     >
                       {t}
                     </div>
                   ))}
                 </div>
 
-                <div className="mt-6 h-px w-full bg-black/10" />
+                <div className="mt-6 h-px w-full bg-black/10 dark:bg-white/10 transition-colors" />
 
                 <div className="mt-6 flex items-center justify-between">
                   <div>
                     <div className="text-sm font-medium">Fast Iterations</div>
-                    <div className="text-xs text-black/60 mt-1">
+                    <div className="text-xs text-black/60 dark:text-white/60 mt-1 transition-colors">
                       Clear revisions + version control
                     </div>
                   </div>
-                  <div className="px-3 py-2 rounded-md border border-black/20 text-xs">
+                  <div className="px-3 py-2 rounded-md border border-black/20 dark:border-white/20 text-xs transition-colors">
                     QC Approved
                   </div>
                 </div>
               </div>
 
-              <div className="absolute -top-8 -right-10 h-44 w-44 rounded-full border border-black/10" />
-              <div className="absolute -bottom-8 -left-10 h-56 w-56 rounded-full border border-black/10" />
+              <div className="absolute -top-8 -right-10 h-44 w-44 rounded-full border border-black/10 dark:border-white/10 transition-colors" />
+              <div className="absolute -bottom-8 -left-10 h-56 w-56 rounded-full border border-black/10 dark:border-white/10 transition-colors" />
             </div>
           </div>
         </div>
       </section>
 
       {/* 2) SERVICES */}
-      <section id="services" className="border-t border-black/10">
+      <section
+        id="services"
+        className="border-t border-black/10 dark:border-white/10 transition-colors"
+      >
         <div className="mx-auto max-w-6xl px-6 py-16">
           <div className="flex items-end justify-between gap-6 flex-wrap">
             <div>
               <h2 className="font-['Cormorant_Garamond',serif] text-3xl md:text-4xl">
                 Services
               </h2>
-              <p className="mt-2 text-black/70 max-w-2xl">
+              <p className="mt-2 text-black/70 dark:text-white/70 max-w-2xl transition-colors">
                 Everything you need to design, visualize, and present jewelry —
                 from CAD to renders, animations, and web.
               </p>
@@ -250,15 +271,15 @@ export default function JewelFxLandingPage() {
               <Link
                 key={s.title}
                 href={s.href}
-                className="group p-6 rounded-2xl border border-black/10 bg-white hover:shadow-[0_18px_50px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition"
+                className="group p-6 rounded-2xl border border-black/10 dark:border-white/10 bg-white dark:bg-white/5 hover:shadow-[0_18px_50px_rgba(0,0,0,0.08)] dark:hover:shadow-[0_18px_50px_rgba(255,255,255,0.08)] hover:-translate-y-1 transition-all"
               >
                 <div className="flex items-start justify-between gap-3">
                   <div className="text-sm font-semibold uppercase tracking-wider">
                     {s.title}
                   </div>
-                  <div className="h-2 w-2 rounded-full bg-black/20 group-hover:bg-black/60 transition-colors" />
+                  <div className="h-2 w-2 rounded-full bg-black/20 dark:bg-white/20 group-hover:bg-black/60 dark:group-hover:bg-white/60 transition-colors" />
                 </div>
-                <p className="mt-3 text-sm text-black/60 leading-relaxed">
+                <p className="mt-3 text-sm text-black/60 dark:text-white/60 leading-relaxed transition-colors">
                   {s.desc}
                 </p>
               </Link>
@@ -268,12 +289,15 @@ export default function JewelFxLandingPage() {
       </section>
 
       {/* 3) PROCESS */}
-      <section id="process" className="border-t border-black/10 bg-black/2">
+      <section
+        id="process"
+        className="border-t border-black/10 dark:border-white/10 bg-black/2 dark:bg-white/5 transition-colors"
+      >
         <div className="mx-auto max-w-6xl px-6 py-16">
           <h2 className="font-['Cormorant_Garamond',serif] text-3xl md:text-4xl">
             Design → Digitize → Deliver
           </h2>
-          <p className="mt-2 text-black/70 max-w-3xl">
+          <p className="mt-2 text-black/70 dark:text-white/70 max-w-3xl transition-colors">
             A clean workflow to move from reference to deliverable — with QC and
             revision loops built in.
           </p>
@@ -282,13 +306,13 @@ export default function JewelFxLandingPage() {
             {steps.map((step, idx) => (
               <div
                 key={step.title}
-                className="p-5 rounded-2xl border border-black/10 bg-white"
+                className="p-5 rounded-2xl border border-black/10 dark:border-white/10 bg-white dark:bg-white/5 transition-colors"
               >
-                <div className="text-xs uppercase tracking-[2px] text-black/50">
+                <div className="text-xs uppercase tracking-[2px] text-black/50 dark:text-white/50 transition-colors">
                   Step {idx + 1}
                 </div>
                 <div className="mt-2 text-sm font-semibold">{step.title}</div>
-                <div className="mt-2 text-sm text-black/60 leading-relaxed">
+                <div className="mt-2 text-sm text-black/60 dark:text-white/60 leading-relaxed transition-colors">
                   {step.desc}
                 </div>
               </div>
@@ -298,14 +322,17 @@ export default function JewelFxLandingPage() {
       </section>
 
       {/* 4) CASE STUDIES / WORK */}
-      <section id="work" className="border-t border-black/10">
+      <section
+        id="work"
+        className="border-t border-black/10 dark:border-white/10 transition-colors"
+      >
         <div className="mx-auto max-w-6xl px-6 py-16">
           <div className="flex items-end justify-between gap-6 flex-wrap">
             <div>
               <h2 className="font-['Cormorant_Garamond',serif] text-3xl md:text-4xl">
                 Work & Case Studies
               </h2>
-              <p className="mt-2 text-black/70 max-w-2xl">
+              <p className="mt-2 text-black/70 dark:text-white/70 max-w-2xl transition-colors">
                 Examples of how teams use JewelFx to launch products faster and
                 reduce sampling cycles.
               </p>
@@ -316,14 +343,14 @@ export default function JewelFxLandingPage() {
             {caseStudies.map((c) => (
               <div
                 key={c.title}
-                className="p-6 rounded-2xl border border-black/10 bg-white hover:shadow-[0_18px_50px_rgba(0,0,0,0.08)] transition"
+                className="p-6 rounded-2xl border border-black/10 dark:border-white/10 bg-white dark:bg-white/5 hover:shadow-[0_18px_50px_rgba(0,0,0,0.08)] dark:hover:shadow-[0_18px_50px_rgba(255,255,255,0.08)] transition-all"
               >
-                <div className="inline-flex items-center gap-2 text-xs uppercase tracking-[2px] text-black/60">
-                  <span className="h-2 w-2 rounded-full bg-black/40" />
+                <div className="inline-flex items-center gap-2 text-xs uppercase tracking-[2px] text-black/60 dark:text-white/60 transition-colors">
+                  <span className="h-2 w-2 rounded-full bg-black/40 dark:bg-white/40 transition-colors" />
                   {c.tag}
                 </div>
                 <div className="mt-3 text-sm font-semibold">{c.title}</div>
-                <p className="mt-2 text-sm text-black/60 leading-relaxed">
+                <p className="mt-2 text-sm text-black/60 dark:text-white/60 leading-relaxed transition-colors">
                   {c.desc}
                 </p>
               </div>
@@ -333,11 +360,14 @@ export default function JewelFxLandingPage() {
       </section>
 
       {/* CONTACT / CTA + FOOTER */}
-      <section id="contact" className="border-t border-black/10">
+      <section
+        id="contact"
+        className="border-t border-black/10 dark:border-white/10 transition-colors"
+      >
         <div className="mx-auto max-w-6xl px-6 pb-10">
-          <footer className="mt-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-6 text-sm text-black/60">
+          <footer className="mt-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-6 text-sm text-black/60 dark:text-white/60 transition-colors">
             <div>
-              <div className="font-['Cormorant_Garamond',serif] text-xl text-black">
+              <div className="font-['Cormorant_Garamond',serif] text-xl text-black dark:text-white transition-colors">
                 JewelFx
               </div>
               <div className="text-xs uppercase tracking-[3px] mt-1">
@@ -345,10 +375,16 @@ export default function JewelFxLandingPage() {
               </div>
             </div>
             <div className="flex gap-6">
-              <Link href="/privacy" className="hover:text-black">
+              <Link
+                href="/privacy"
+                className="hover:text-black dark:hover:text-white transition-colors"
+              >
                 Privacy
               </Link>
-              <Link href="/terms" className="hover:text-black">
+              <Link
+                href="/terms"
+                className="hover:text-black dark:hover:text-white transition-colors"
+              >
                 Terms
               </Link>
             </div>
