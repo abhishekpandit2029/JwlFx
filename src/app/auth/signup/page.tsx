@@ -1,0 +1,302 @@
+"use client";
+
+import { useState } from "react";
+import Link from "next/link";
+import { PiEyeglassesBold, PiEyeglassesFill } from "react-icons/pi";
+import SelectCallingCode from "@/components/common/SelectCallingCode";
+import HeroAuth from "@/components/auth/HeroAuth";
+
+export default function JewelFxRegistration() {
+  const [formData, setFormData] = useState({
+    email: "",
+    password: "",
+    confirmPassword: "",
+    firstName: "",
+    lastName: "",
+    callingCode: "",
+    phone: "",
+    role: "",
+    businessInfo: "",
+  });
+
+  const [showPassword, setShowPassword] = useState(false);
+  const [showConfirmPassword, setShowConfirmPassword] = useState(false);
+  const [error, setError] = useState("");
+
+  const handleChange = (
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+    >
+  ) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+    setError("");
+  };
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+
+    if (formData.password !== formData.confirmPassword) {
+      setError("Passwords do not match.");
+      return;
+    }
+
+    const payload = {
+      email: formData.email,
+      password: formData.password,
+      firstName: formData.firstName,
+      lastName: formData.lastName,
+      phone: formData.phone || undefined,
+      callingCode: formData.callingCode || undefined,
+      role: formData.role || undefined,
+      businessInfo: formData.businessInfo || undefined,
+    };
+
+    console.log("Form submitted:", payload);
+    // Add your registration logic here
+  };
+
+  const inputClass =
+    "w-full bg-white border border-black/40 rounded-md px-3 py-3 text-black text-[15px] " +
+    "outline-none transition-all duration-200 focus:border-black focus:ring-2 focus:ring-black/10 " +
+    "placeholder:text-black/30";
+
+  const labelClass = "text-xs uppercase tracking-[1.5px] text-black/70";
+
+  return (
+    <div className="min-h-screen bg-white text-black relative overflow-hidden">
+      <div className="relative z-1 flex min-h-screen">
+        <HeroAuth />
+        <div className="flex-1 w-full p-6 sm:p-10 md:p-15 flex items-center justify-center bg-white">
+          <div className="w-full max-w-130 animate-[fadeInUp_1s_ease-out_0.2s_both]">
+            <div className="mb-10 text-center">
+              <h1 className="font-['Cormorant_Garamond',serif] text-[36px] sm:text-[42px] font-normal mb-3 relative inline-block after:content-[''] after:absolute after:-bottom-2 after:left-1/2 after:-translate-x-1/2 after:w-15 after:h-px after:bg-black/50">
+                Sign Up
+              </h1>
+              <p className="text-black/60 text-sm mt-4 font-light">
+                Enter your details to create an account
+              </p>
+            </div>
+
+            <form onSubmit={handleSubmit} className="flex flex-col gap-6">
+              {/* First/Last Name */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div className="flex flex-col gap-2">
+                  <label className={labelClass}>First Name</label>
+                  <input
+                    type="text"
+                    name="firstName"
+                    value={formData.firstName}
+                    onChange={handleChange}
+                    placeholder="John"
+                    required
+                    className={inputClass}
+                  />
+                </div>
+
+                <div className="flex flex-col gap-2">
+                  <label className={labelClass}>Last Name</label>
+                  <input
+                    type="text"
+                    name="lastName"
+                    value={formData.lastName}
+                    onChange={handleChange}
+                    placeholder="Doe"
+                    required
+                    className={inputClass}
+                  />
+                </div>
+              </div>
+
+              {/* Email */}
+              <div className="flex flex-col gap-2">
+                <label className={labelClass}>Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  placeholder="you@company.com"
+                  required
+                  className={inputClass}
+                />
+              </div>
+
+              {/* Phone (optional) — Calling code + phone input */}
+              <div className="flex flex-col gap-2">
+                <label className={labelClass}>Phone (optional)</label>
+
+                <div className="flex items-center gap-3">
+                  <SelectCallingCode
+                    onChange={(value) =>
+                      setFormData((prev) => ({ ...prev, callingCode: value }))
+                    }
+                  />
+                  <input
+                    type="tel"
+                    name="phone"
+                    value={formData.phone}
+                    onChange={handleChange}
+                    placeholder="(555) 000-0000"
+                    className={inputClass}
+                  />
+                </div>
+              </div>
+
+              {/* Role (optional) */}
+              <div className="flex flex-col gap-2">
+                <label className={labelClass}>Role</label>
+                <select
+                  name="role"
+                  value={formData.role}
+                  onChange={handleChange}
+                  className={
+                    inputClass +
+                    " cursor-pointer appearance-none pr-10 bg-[url('data:image/svg+xml,%3Csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20width=%2712%27%20height=%2712%27%20viewBox=%270%200%2012%2012%27%3E%3Cpath%20fill=%27%23000000%27%20d=%27M6%209L1%204h10z%27/%3E%3C/svg%3E')] bg-no-repeat bg-position-[right_0.75rem_center]"
+                  }
+                >
+                  <option value="">Select role</option>
+                  <option value="customer">Customer</option>
+                  <option value="admin">Admin</option>
+                  <option value="manager">Manager</option>
+                  <option value="designer">Designer</option>
+                </select>
+              </div>
+
+              {/* Business Info (optional) */}
+              <div className="flex flex-col gap-2">
+                <label className={labelClass}>Business Info (optional)</label>
+                <textarea
+                  name="businessInfo"
+                  value={formData.businessInfo}
+                  onChange={handleChange}
+                  placeholder="Business name, type, location, anything you'd like to share..."
+                  rows={3}
+                  className={inputClass + " resize-none"}
+                />
+              </div>
+
+              {/* Passwords */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div className="flex flex-col gap-2">
+                  <label className={labelClass}>Password</label>
+                  <div className="relative">
+                    <input
+                      type={showPassword ? "text" : "password"}
+                      name="password"
+                      value={formData.password}
+                      onChange={handleChange}
+                      placeholder="Min. 8 characters"
+                      required
+                      minLength={8}
+                      className={inputClass + " pr-12"}
+                    />
+                    <button
+                      type="button"
+                      onClick={() => setShowPassword((s) => !s)}
+                      className="absolute right-2 top-1/2 -translate-y-1/2 bg-transparent border-none text-black/60 cursor-pointer p-2 hover:text-black"
+                      aria-label="Toggle password visibility"
+                    >
+                      {showPassword ? (
+                        <PiEyeglassesBold />
+                      ) : (
+                        <PiEyeglassesFill />
+                      )}
+                    </button>
+                  </div>
+                </div>
+
+                <div className="flex flex-col gap-2">
+                  <label className={labelClass}>Confirm Password</label>
+                  <div className="relative">
+                    <input
+                      type={showConfirmPassword ? "text" : "password"}
+                      name="confirmPassword"
+                      value={formData.confirmPassword}
+                      onChange={handleChange}
+                      placeholder="Re-enter password"
+                      required
+                      minLength={8}
+                      className={inputClass + " pr-12"}
+                    />
+                    <button
+                      type="button"
+                      onClick={() => setShowConfirmPassword((s) => !s)}
+                      className="absolute right-2 top-1/2 -translate-y-1/2 bg-transparent border-none text-black/60 cursor-pointer p-2 hover:text-black"
+                      aria-label="Toggle confirm password visibility"
+                    >
+                      {showConfirmPassword ? (
+                        <PiEyeglassesBold />
+                      ) : (
+                        <PiEyeglassesFill />
+                      )}
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              {/* Error */}
+              {error && (
+                <div className="text-sm text-black bg-black/5 border border-black/15 px-4 py-3 rounded-md">
+                  {error}
+                </div>
+              )}
+
+              {/* Submit */}
+              <button
+                type="submit"
+                className="mt-1 px-8 py-4 bg-black text-white border border-black text-[13px] font-medium uppercase tracking-[2px] cursor-pointer transition-all duration-300 hover:bg-white hover:text-black hover:border-black hover:-translate-y-0.5 active:translate-y-0 rounded-md"
+              >
+                Create Account
+              </button>
+
+              <div className="w-full h-px bg-black/10 my-6" />
+
+              <div className="text-center text-sm text-black/60">
+                Already have an account?{" "}
+                <Link
+                  href="/auth/signin"
+                  className="text-black underline underline-offset-4 hover:opacity-80"
+                >
+                  Sign In
+                </Link>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <style jsx>{`
+        @keyframes float {
+          0%,
+          100% {
+            transform: translate(0, 0) scale(1);
+          }
+          50% {
+            transform: translate(26px, -26px) scale(1.04);
+          }
+        }
+
+        @keyframes rotate {
+          from {
+            transform: rotate(45deg);
+          }
+          to {
+            transform: rotate(405deg);
+          }
+        }
+
+        @keyframes fadeInUp {
+          from {
+            opacity: 0;
+            transform: translateY(26px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+      `}</style>
+    </div>
+  );
+}

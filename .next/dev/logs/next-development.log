@@ -1,0 +1,5 @@
+[00:00:00.734] Server  LOG      ✓ Ready in 570ms
+[00:00:11.331] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:18.325] Browser ERROR   Warning: [antd: Select] `dropdownMatchSelectWidth` is deprecated. Please use `popupMatchSelectWidth` instead.
+[00:00:18.325] Browser ERROR   Warning: [antd: Select] `dropdownStyle` is deprecated. Please use `styles.popup.root` instead.
+[00:00:18.325] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
