@@ -96,24 +96,6 @@ export default function JewelFxLandingPage() {
     },
   ];
 
-  const blogPosts: BlogPost[] = [
-    {
-      title: "What is Jewelry Rendering?",
-      desc: "How photoreal renders replace product photography and speed up sales.",
-      href: "/blog/what-is-jewelry-rendering",
-    },
-    {
-      title: "Why 3D Matters for Ecommerce",
-      desc: "Interactive visuals, faster launches, and fewer sampling cycles.",
-      href: "/blog",
-    },
-    {
-      title: "Product Development Workflow",
-      desc: "A clear process for design → CAD → visualization → production.",
-      href: "/blog",
-    },
-  ];
-
   return (
     <div className="min-h-screen bg-white dark:bg-black text-black dark:text-white transition-colors">
       {/* Top Nav */}
