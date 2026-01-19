@@ -1,5 +1,12 @@
 {
+  "/_not-found/page": "app/_not-found/page.js",
+  "/admin/page": "app/admin/page.js",
+  "/auth/forgot/page": "app/auth/forgot/page.js",
+  "/auth/reset/page": "app/auth/reset/page.js",
   "/auth/signin/page": "app/auth/signin/page.js",
   "/auth/signup/page": "app/auth/signup/page.js",
+  "/client/page": "app/client/page.js",
+  "/designer/page": "app/designer/page.js",
+  "/manager/page": "app/manager/page.js",
   "/page": "app/page.js"
 }

@@ -5,17 +5,16 @@ import Link from "next/link";
 import { PiEyeglassesBold, PiEyeglassesFill } from "react-icons/pi";
 import SelectCallingCode from "@/components/common/SelectCallingCode";
 import HeroAuth from "@/components/auth/HeroAuth";
+import { decryptFromServer } from "@/utils/encrypt";
 
 export default function JewelFxRegistration() {
   const [formData, setFormData] = useState({
     email: "",
     password: "",
     confirmPassword: "",
-    firstName: "",
-    lastName: "",
+    name: "",
     callingCode: "",
     phone: "",
-    role: "",
     businessInfo: "",
   });
 
@@ -44,11 +43,9 @@ export default function JewelFxRegistration() {
     const payload = {
       email: formData.email,
       password: formData.password,
-      firstName: formData.firstName,
-      lastName: formData.lastName,
+      name: formData.name,
       phone: formData.phone || undefined,
       callingCode: formData.callingCode || undefined,
-      role: formData.role || undefined,
       businessInfo: formData.businessInfo || undefined,
     };
 
@@ -74,41 +71,26 @@ export default function JewelFxRegistration() {
           <div className="w-full max-w-130 animate-[fadeInUp_1s_ease-out_0.2s_both]">
             <div className="mb-10 text-center">
               <h1 className="font-['Cormorant_Garamond',serif] text-[36px] sm:text-[42px] font-normal mb-3 relative inline-block after:content-[''] after:absolute after:-bottom-2 after:left-1/2 after:-translate-x-1/2 after:w-15 after:h-px after:bg-black/50 dark:after:bg-white/50">
-                Sign Up
+                Create Your Account
               </h1>
               <p className="text-black/60 dark:text-white/60 text-sm mt-4 font-light transition-colors">
-                Enter your details to create an account
+                Get started in just a few seconds
               </p>
             </div>
 
             <form onSubmit={handleSubmit} className="flex flex-col gap-6">
-              {/* First/Last Name */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                <div className="flex flex-col gap-2">
-                  <label className={labelClass}>First Name</label>
-                  <input
-                    type="text"
-                    name="firstName"
-                    value={formData.firstName}
-                    onChange={handleChange}
-                    placeholder="John"
-                    required
-                    className={inputClass}
-                  />
-                </div>
-
-                <div className="flex flex-col gap-2">
-                  <label className={labelClass}>Last Name</label>
-                  <input
-                    type="text"
-                    name="lastName"
-                    value={formData.lastName}
-                    onChange={handleChange}
-                    placeholder="Doe"
-                    required
-                    className={inputClass}
-                  />
-                </div>
+              {/* Name */}
+              <div className="flex flex-col gap-2">
+                <label className={labelClass}>Name</label>
+                <input
+                  type="name"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleChange}
+                  placeholder="John Doe"
+                  required
+                  className={inputClass}
+                />
               </div>
 
               {/* Email */}
@@ -119,15 +101,15 @@ export default function JewelFxRegistration() {
                   name="email"
                   value={formData.email}
                   onChange={handleChange}
-                  placeholder="you@company.com"
+                  placeholder="johndoe@jewelfx.com"
                   required
                   className={inputClass}
                 />
               </div>
 
-              {/* Phone (optional) — Calling code + phone input */}
+              {/* Phone — Calling code + phone input */}
               <div className="flex flex-col gap-2">
-                <label className={labelClass}>Phone (optional)</label>
+                <label className={labelClass}>Phone</label>
 
                 <div className="flex items-center gap-3">
                   <SelectCallingCode
@@ -146,32 +128,9 @@ export default function JewelFxRegistration() {
                 </div>
               </div>
 
-              {/* Role (optional) */}
+              {/* Business Info */}
               <div className="flex flex-col gap-2">
-                <label className={labelClass}>Role</label>
-                <select
-                  name="role"
-                  value={formData.role}
-                  onChange={handleChange}
-                  className={
-                    inputClass +
-                    " cursor-pointer appearance-none pr-10 " +
-                    "bg-[url('data:image/svg+xml,%3Csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20width=%2712%27%20height=%2712%27%20viewBox=%270%200%2012%2012%27%3E%3Cpath%20fill=%27%23000000%27%20d=%27M6%209L1%204h10z%27/%3E%3C/svg%3E')] " +
-                    "dark:bg-[url('data:image/svg+xml,%3Csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20width=%2712%27%20height=%2712%27%20viewBox=%270%200%2012%2012%27%3E%3Cpath%20fill=%27%23ffffff%27%20d=%27M6%209L1%204h10z%27/%3E%3C/svg%3E')] " +
-                    "bg-no-repeat bg-position-[right_0.75rem_center]"
-                  }
-                >
-                  <option value="">Select role</option>
-                  <option value="customer">Customer</option>
-                  <option value="admin">Admin</option>
-                  <option value="manager">Manager</option>
-                  <option value="designer">Designer</option>
-                </select>
-              </div>
-
-              {/* Business Info (optional) */}
-              <div className="flex flex-col gap-2">
-                <label className={labelClass}>Business Info (optional)</label>
+                <label className={labelClass}>Business Info</label>
                 <textarea
                   name="businessInfo"
                   value={formData.businessInfo}
@@ -253,7 +212,7 @@ export default function JewelFxRegistration() {
                 type="submit"
                 className="mt-1 px-8 py-4 bg-black dark:bg-white text-white dark:text-black border border-black dark:border-white text-[13px] font-medium uppercase tracking-[2px] cursor-pointer transition-all duration-300 hover:bg-white dark:hover:bg-black hover:text-black dark:hover:text-white hover:border-black dark:hover:border-white hover:-translate-y-0.5 active:translate-y-0 rounded-md"
               >
-                Create Account
+                Sign Up
               </button>
 
               <div className="w-full h-px bg-black/10 dark:bg-white/10 my-6 transition-colors" />

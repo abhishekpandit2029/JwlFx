@@ -54,10 +54,10 @@ export default function JewelFxLogin() {
           <div className="w-full max-w-130 animate-[fadeInUp_1s_ease-out_0.2s_both]">
             <div className="mb-10 text-center">
               <h1 className="font-['Cormorant_Garamond',serif] text-[36px] sm:text-[42px] font-normal mb-3 relative inline-block after:content-[''] after:absolute after:-bottom-2 after:left-1/2 after:-translate-x-1/2 after:w-15 after:h-px after:bg-black/50 dark:after:bg-white/50">
-                Welcome Back
+                Reset Password
               </h1>
               <p className="text-black/60 dark:text-white/60 text-sm mt-4 font-light transition-colors">
-                Please sign in to continue
+                Create a new password for your account
               </p>
             </div>
 
@@ -123,11 +123,6 @@ export default function JewelFxLogin() {
                 </div>
               </div>
 
-              <div className="flex justify-between text-sm">
-                <a href="/auth/forgot">Forgot Password?</a>
-                <a href="/auth/reset">Reset Password?</a>
-              </div>
-
               {/* Error */}
               {error && (
                 <div className="text-sm text-black dark:text-white bg-black/5 dark:bg-white/5 border border-black/15 dark:border-white/15 px-4 py-3 rounded-md transition-colors">
@@ -140,7 +135,7 @@ export default function JewelFxLogin() {
                 type="submit"
                 className="mt-1 px-8 py-4 bg-black dark:bg-white text-white dark:text-black border border-black dark:border-white text-[13px] font-medium uppercase tracking-[2px] cursor-pointer transition-all duration-300 hover:bg-white dark:hover:bg-black hover:text-black dark:hover:text-white hover:border-black dark:hover:border-white hover:-translate-y-0.5 active:translate-y-0 rounded-md"
               >
-                Sign In
+                Update Password
               </button>
 
               <div className="w-full h-px bg-black/10 dark:bg-white/10 my-6 transition-colors" />
